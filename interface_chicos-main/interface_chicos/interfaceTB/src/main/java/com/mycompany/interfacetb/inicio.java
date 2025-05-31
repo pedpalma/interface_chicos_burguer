@@ -53,7 +53,7 @@ public class inicio extends javax.swing.JFrame implements Runnable {
 
         jLabel1.setIcon(new javax.swing.ImageIcon("D:\\ADS\\interface_chicos_burguer\\interface_chicos-main\\img\\carregamento-unscreen.gif")); // NOI18N
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(30, 20, 380, 340);
+        jLabel1.setBounds(20, 60, 390, 340);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
