@@ -124,12 +124,12 @@ public class lanche extends javax.swing.JFrame {
         jTextArea1.setRows(5);
         jScrollPane1.setViewportView(jTextArea1);
 
-        jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(229, 312, 463, 135));
+        jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 340, 463, 135));
 
         jLabel11.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(0, 0, 0));
         jLabel11.setText("Novo Lanche:");
-        jPanel2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(229, 278, -1, -1));
+        jPanel2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 300, -1, -1));
 
         salvar_lanche.setBackground(new java.awt.Color(154, 88, 51));
         salvar_lanche.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
@@ -140,13 +140,13 @@ public class lanche extends javax.swing.JFrame {
                 salvar_lancheActionPerformed(evt);
             }
         });
-        jPanel2.add(salvar_lanche, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 283, 185, 43));
+        jPanel2.add(salvar_lanche, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, 185, 43));
 
         limpar_lanche.setBackground(new java.awt.Color(154, 88, 51));
         limpar_lanche.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         limpar_lanche.setForeground(new java.awt.Color(0, 0, 0));
         limpar_lanche.setText("Limpar");
-        jPanel2.add(limpar_lanche, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 344, 185, 42));
+        jPanel2.add(limpar_lanche, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 370, 185, 42));
 
         voltar_menu.setBackground(new java.awt.Color(154, 88, 51));
         voltar_menu.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
@@ -157,7 +157,7 @@ public class lanche extends javax.swing.JFrame {
                 voltar_menuActionPerformed(evt);
             }
         });
-        jPanel2.add(voltar_menu, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 404, -1, 43));
+        jPanel2.add(voltar_menu, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 430, -1, 43));
 
         jTextField1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jTextField1.setForeground(new java.awt.Color(255, 255, 255));
@@ -167,15 +167,11 @@ public class lanche extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 859, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 859, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 510, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 510, Short.MAX_VALUE)
         );
 
         pack();
