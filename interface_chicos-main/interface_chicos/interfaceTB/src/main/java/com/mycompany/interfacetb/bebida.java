@@ -131,6 +131,11 @@ public class bebida extends javax.swing.JFrame {
         limpar_bebida.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         limpar_bebida.setForeground(new java.awt.Color(0, 0, 0));
         limpar_bebida.setText("Limpar");
+        limpar_bebida.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                limpar_bebidaActionPerformed(evt);
+            }
+        });
         jPanel2.add(limpar_bebida, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 185, 42));
 
         nome_bebida.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -226,6 +231,17 @@ public class bebida extends javax.swing.JFrame {
             nome_bebida.setText("Digite o nome do lanche");
         }
     }//GEN-LAST:event_nome_bebidaFocusLost
+
+    private void limpar_bebidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_limpar_bebidaActionPerformed
+        // TODO add your handling code here:
+        nome_bebida.setText("");
+        base_bebida.setSelectedIndex(0);
+        tipo_na.setSelected(false);
+        tipo_a.setSelected(false);
+        tipo_s.setSelected(false);
+        sabor_bebida.setSelectedIndex(0);
+        area_bebida.setText("");
+    }//GEN-LAST:event_limpar_bebidaActionPerformed
 
     /**
      * @param args the command line arguments

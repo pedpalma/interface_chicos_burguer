@@ -392,6 +392,7 @@ public class cadastro1 extends javax.swing.JFrame {
         receberemail.setSelected(false);
         cadastro.clearSelection();
         profissao.setSelectedIndex(0);
+        area.setText("");
     }//GEN-LAST:event_limpar_cadastoActionPerformed
 
     private void idadeFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_idadeFocusGained
