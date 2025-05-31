@@ -56,9 +56,9 @@
                       <Group type="102" attributes="0">
                           <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="botaoLimpar" alignment="1" max="32767" attributes="0"/>
-                              <Component id="botao" alignment="1" max="32767" attributes="0"/>
-                              <Component id="jButton1" alignment="1" max="32767" attributes="0"/>
+                              <Component id="limpar_func" alignment="1" max="32767" attributes="0"/>
+                              <Component id="salvar_func" alignment="1" max="32767" attributes="0"/>
+                              <Component id="voltar_menu" alignment="1" max="32767" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
                           <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
@@ -86,13 +86,13 @@
                               </Group>
                           </Group>
                           <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                          <Component id="botao" min="-2" pref="42" max="-2" attributes="0"/>
+                          <Component id="salvar_func" min="-2" pref="42" max="-2" attributes="0"/>
                           <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
-                          <Component id="botaoLimpar" min="-2" pref="42" max="-2" attributes="0"/>
+                          <Component id="limpar_func" min="-2" pref="42" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" attributes="0">
                           <EmptySpace min="320" pref="320" max="-2" attributes="0"/>
-                          <Component id="jButton1" min="-2" pref="43" max="-2" attributes="0"/>
+                          <Component id="voltar_menu" min="-2" pref="43" max="-2" attributes="0"/>
                       </Group>
                       <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
                           <Group type="102" attributes="0">
@@ -127,7 +127,7 @@
             <Property name="text" type="java.lang.String" value="Funcion&#xe1;rios"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="botao">
+        <Component class="javax.swing.JButton" name="salvar_func">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="33" green="58" red="9a" type="rgb"/>
@@ -141,7 +141,7 @@
             <Property name="text" type="java.lang.String" value="Salvar"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botaoActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="salvar_funcActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel1">
@@ -155,7 +155,7 @@
             <Property name="text" type="java.lang.String" value="Cadastre-se aqui!"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="botaoLimpar">
+        <Component class="javax.swing.JButton" name="limpar_func">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="33" green="58" red="9a" type="rgb"/>
@@ -169,7 +169,7 @@
             <Property name="text" type="java.lang.String" value="Limpar"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botaoLimparActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="limpar_funcActionPerformed"/>
           </Events>
         </Component>
         <Container class="javax.swing.JPanel" name="jPanel2">
@@ -507,7 +507,7 @@
             </Component>
           </SubComponents>
         </Container>
-        <Component class="javax.swing.JButton" name="jButton1">
+        <Component class="javax.swing.JButton" name="voltar_menu">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="33" green="58" red="9a" type="rgb"/>
@@ -521,7 +521,7 @@
             <Property name="text" type="java.lang.String" value="&#xab; Voltar Menu"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="voltar_menuActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>

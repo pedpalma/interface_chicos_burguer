@@ -28,12 +28,12 @@ public class produtos extends javax.swing.JFrame {
 
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        ir_sobremesa = new javax.swing.JButton();
+        ir_lanche = new javax.swing.JButton();
+        ir_porcao = new javax.swing.JButton();
+        ir_bebida = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        jButton5 = new javax.swing.JButton();
+        voltar_menu = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -41,43 +41,43 @@ public class produtos extends javax.swing.JFrame {
 
         jLabel1.setIcon(new javax.swing.ImageIcon("D:\\ADS\\interface_chicos_burguer\\interface_chicos-main\\img\\IconBurguerPNG_200x200-removebg-preview.png")); // NOI18N
 
-        jButton1.setBackground(new java.awt.Color(154, 88, 51));
-        jButton1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(0, 0, 0));
-        jButton1.setText("Sobremesa");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        ir_sobremesa.setBackground(new java.awt.Color(154, 88, 51));
+        ir_sobremesa.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        ir_sobremesa.setForeground(new java.awt.Color(0, 0, 0));
+        ir_sobremesa.setText("Sobremesa");
+        ir_sobremesa.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                ir_sobremesaActionPerformed(evt);
             }
         });
 
-        jButton2.setBackground(new java.awt.Color(154, 88, 51));
-        jButton2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(0, 0, 0));
-        jButton2.setText("Lanche");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        ir_lanche.setBackground(new java.awt.Color(154, 88, 51));
+        ir_lanche.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        ir_lanche.setForeground(new java.awt.Color(0, 0, 0));
+        ir_lanche.setText("Lanche");
+        ir_lanche.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                ir_lancheActionPerformed(evt);
             }
         });
 
-        jButton3.setBackground(new java.awt.Color(154, 88, 51));
-        jButton3.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(0, 0, 0));
-        jButton3.setText("Porção");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        ir_porcao.setBackground(new java.awt.Color(154, 88, 51));
+        ir_porcao.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        ir_porcao.setForeground(new java.awt.Color(0, 0, 0));
+        ir_porcao.setText("Porção");
+        ir_porcao.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                ir_porcaoActionPerformed(evt);
             }
         });
 
-        jButton4.setBackground(new java.awt.Color(154, 88, 51));
-        jButton4.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(0, 0, 0));
-        jButton4.setText("Bebida");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        ir_bebida.setBackground(new java.awt.Color(154, 88, 51));
+        ir_bebida.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        ir_bebida.setForeground(new java.awt.Color(0, 0, 0));
+        ir_bebida.setText("Bebida");
+        ir_bebida.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                ir_bebidaActionPerformed(evt);
             }
         });
 
@@ -85,13 +85,13 @@ public class produtos extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Qual item deseja adicionar?");
 
-        jButton5.setBackground(new java.awt.Color(154, 88, 51));
-        jButton5.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
-        jButton5.setForeground(new java.awt.Color(0, 0, 0));
-        jButton5.setText("« Voltar Menu");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        voltar_menu.setBackground(new java.awt.Color(154, 88, 51));
+        voltar_menu.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
+        voltar_menu.setForeground(new java.awt.Color(0, 0, 0));
+        voltar_menu.setText("« Voltar Menu");
+        voltar_menu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                voltar_menuActionPerformed(evt);
             }
         });
 
@@ -106,17 +106,17 @@ public class produtos extends javax.swing.JFrame {
                         .addComponent(jLabel1))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(20, 20, 20)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(ir_lanche, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(30, 30, 30)
-                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(ir_porcao, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(20, 20, 20)
-                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(ir_bebida, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(30, 30, 30)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(ir_sobremesa, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(20, 20, 20)
-                        .addComponent(jButton5))
+                        .addComponent(voltar_menu))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(130, 130, 130)
                         .addComponent(jLabel2)))
@@ -130,14 +130,14 @@ public class produtos extends javax.swing.JFrame {
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(ir_lanche, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ir_porcao, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(ir_bebida, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ir_sobremesa, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(46, 46, 46)
-                .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(voltar_menu, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(40, Short.MAX_VALUE))
         );
 
@@ -159,31 +159,32 @@ public class produtos extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void ir_sobremesaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ir_sobremesaActionPerformed
         // TODO add your handling code here:
 
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_ir_sobremesaActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void ir_lancheActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ir_lancheActionPerformed
+        // TODO add your handling code here:
+        dispose();
+
+    }//GEN-LAST:event_ir_lancheActionPerformed
+
+    private void ir_porcaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ir_porcaoActionPerformed
         // TODO add your handling code here:
 
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_ir_porcaoActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void ir_bebidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ir_bebidaActionPerformed
         // TODO add your handling code here:
 
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_ir_bebidaActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-
-    }//GEN-LAST:event_jButton4ActionPerformed
-
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void voltar_menuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_voltar_menuActionPerformed
         // TODO add your handling code here:
         dispose();
         new inicio().setVisible(true);
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_voltar_menuActionPerformed
 
     /**
      * @param args the command line arguments
@@ -221,13 +222,13 @@ public class produtos extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
+    private javax.swing.JButton ir_bebida;
+    private javax.swing.JButton ir_lanche;
+    private javax.swing.JButton ir_porcao;
+    private javax.swing.JButton ir_sobremesa;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JButton voltar_menu;
     // End of variables declaration//GEN-END:variables
 }

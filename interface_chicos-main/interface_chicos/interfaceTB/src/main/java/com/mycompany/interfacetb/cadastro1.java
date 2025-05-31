@@ -49,7 +49,7 @@ public class cadastro1 extends javax.swing.JFrame {
         nb = new javax.swing.JRadioButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         area = new javax.swing.JTextArea();
-        jButton1 = new javax.swing.JButton();
+        voltar_menu = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -283,13 +283,13 @@ public class cadastro1 extends javax.swing.JFrame {
         area.setRows(5);
         jScrollPane2.setViewportView(area);
 
-        jButton1.setBackground(new java.awt.Color(154, 88, 51));
-        jButton1.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(0, 0, 0));
-        jButton1.setText("« Voltar Menu");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        voltar_menu.setBackground(new java.awt.Color(154, 88, 51));
+        voltar_menu.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
+        voltar_menu.setForeground(new java.awt.Color(0, 0, 0));
+        voltar_menu.setText("« Voltar Menu");
+        voltar_menu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                voltar_menuActionPerformed(evt);
             }
         });
 
@@ -309,7 +309,7 @@ public class cadastro1 extends javax.swing.JFrame {
                             .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel7)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jButton1)
+                        .addComponent(voltar_menu)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(botaoLimpar, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -331,7 +331,7 @@ public class cadastro1 extends javax.swing.JFrame {
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(27, 27, 27)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(voltar_menu, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(botaoLimpar, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(botao, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -460,11 +460,11 @@ public class cadastro1 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_receberemailActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void voltar_menuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_voltar_menuActionPerformed
         // TODO add your handling code here:
         dispose();
         new inicio().setVisible(true);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_voltar_menuActionPerformed
 
     /**
      * @param args the command line arguments
@@ -508,7 +508,6 @@ public class cadastro1 extends javax.swing.JFrame {
     private javax.swing.ButtonGroup cadastro;
     private javax.swing.JRadioButton fem;
     private javax.swing.JTextField idade;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -527,5 +526,6 @@ public class cadastro1 extends javax.swing.JFrame {
     private javax.swing.JTextField nome;
     private javax.swing.JComboBox<String> profissao;
     private javax.swing.JCheckBox receberemail;
+    private javax.swing.JButton voltar_menu;
     // End of variables declaration//GEN-END:variables
 }

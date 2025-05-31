@@ -28,9 +28,9 @@ public class funcionarios extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
-        botao = new javax.swing.JButton();
+        salvar_func = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        botaoLimpar = new javax.swing.JButton();
+        limpar_func = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         nome = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
@@ -50,7 +50,7 @@ public class funcionarios extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         area = new javax.swing.JTextArea();
-        jButton1 = new javax.swing.JButton();
+        voltar_menu = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -61,13 +61,13 @@ public class funcionarios extends javax.swing.JFrame {
         jLabel7.setForeground(new java.awt.Color(0, 0, 0));
         jLabel7.setText("Funcionários");
 
-        botao.setBackground(new java.awt.Color(154, 88, 51));
-        botao.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
-        botao.setForeground(new java.awt.Color(0, 0, 0));
-        botao.setText("Salvar");
-        botao.addActionListener(new java.awt.event.ActionListener() {
+        salvar_func.setBackground(new java.awt.Color(154, 88, 51));
+        salvar_func.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
+        salvar_func.setForeground(new java.awt.Color(0, 0, 0));
+        salvar_func.setText("Salvar");
+        salvar_func.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botaoActionPerformed(evt);
+                salvar_funcActionPerformed(evt);
             }
         });
 
@@ -75,13 +75,13 @@ public class funcionarios extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Cadastre-se aqui!");
 
-        botaoLimpar.setBackground(new java.awt.Color(154, 88, 51));
-        botaoLimpar.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
-        botaoLimpar.setForeground(new java.awt.Color(0, 0, 0));
-        botaoLimpar.setText("Limpar");
-        botaoLimpar.addActionListener(new java.awt.event.ActionListener() {
+        limpar_func.setBackground(new java.awt.Color(154, 88, 51));
+        limpar_func.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
+        limpar_func.setForeground(new java.awt.Color(0, 0, 0));
+        limpar_func.setText("Limpar");
+        limpar_func.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botaoLimparActionPerformed(evt);
+                limpar_funcActionPerformed(evt);
             }
         });
 
@@ -284,13 +284,13 @@ public class funcionarios extends javax.swing.JFrame {
         area.setRows(5);
         jScrollPane2.setViewportView(area);
 
-        jButton1.setBackground(new java.awt.Color(154, 88, 51));
-        jButton1.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(0, 0, 0));
-        jButton1.setText("« Voltar Menu");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        voltar_menu.setBackground(new java.awt.Color(154, 88, 51));
+        voltar_menu.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
+        voltar_menu.setForeground(new java.awt.Color(0, 0, 0));
+        voltar_menu.setText("« Voltar Menu");
+        voltar_menu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                voltar_menuActionPerformed(evt);
             }
         });
 
@@ -307,9 +307,9 @@ public class funcionarios extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(20, 20, 20)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(botaoLimpar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(botao, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(limpar_func, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(salvar_func, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(voltar_menu, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(26, 26, 26)
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
@@ -329,12 +329,12 @@ public class funcionarios extends javax.swing.JFrame {
                                 .addGap(40, 40, 40)
                                 .addComponent(jLabel1)))
                         .addGap(10, 10, 10)
-                        .addComponent(botao, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(salvar_func, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(botaoLimpar, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(limpar_func, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(320, 320, 320)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(voltar_menu, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addGroup(jPanel1Layout.createSequentialGroup()
                             .addGap(50, 50, 50)
@@ -363,13 +363,13 @@ public class funcionarios extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void botaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoActionPerformed
+    private void salvar_funcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salvar_funcActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_botaoActionPerformed
+    }//GEN-LAST:event_salvar_funcActionPerformed
 
-    private void botaoLimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoLimparActionPerformed
+    private void limpar_funcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_limpar_funcActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_botaoLimparActionPerformed
+    }//GEN-LAST:event_limpar_funcActionPerformed
 
     private void nomeFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_nomeFocusGained
         // TODO add your handling code here:
@@ -437,11 +437,11 @@ public class funcionarios extends javax.swing.JFrame {
         fem.setSelected(false);
     }//GEN-LAST:event_nbActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void voltar_menuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_voltar_menuActionPerformed
         // TODO add your handling code here:
         dispose();
         new inicio().setVisible(true);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_voltar_menuActionPerformed
 
     /**
      * @param args the command line arguments
@@ -480,11 +480,8 @@ public class funcionarios extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextArea area;
-    private javax.swing.JButton botao;
-    private javax.swing.JButton botaoLimpar;
     private javax.swing.JRadioButton fem;
     private javax.swing.JTextField idade;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -496,6 +493,7 @@ public class funcionarios extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JButton limpar_func;
     private javax.swing.JRadioButton masc;
     private javax.swing.JRadioButton nb;
     private javax.swing.JLabel news;
@@ -504,5 +502,7 @@ public class funcionarios extends javax.swing.JFrame {
     private javax.swing.JTextField nome;
     private javax.swing.JComboBox<String> profissao;
     private javax.swing.JCheckBox receberemail;
+    private javax.swing.JButton salvar_func;
+    private javax.swing.JButton voltar_menu;
     // End of variables declaration//GEN-END:variables
 }
