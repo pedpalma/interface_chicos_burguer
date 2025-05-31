@@ -53,8 +53,8 @@ public class pedido extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(161, 146, 134));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("U:\\LIP\\Interface\\Interface\\img\\IconBurguer.png")); // NOI18N
-        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, 280, 250));
+        jLabel1.setIcon(new javax.swing.ImageIcon("D:\\ADS\\interface_chicos_burguer\\interface_chicos-main\\img\\IconBurguerPNG_200x200-removebg-preview.png")); // NOI18N
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 210, 200));
 
         jComboBox1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Água", "Coca-cola", "Pepsi Twist", "Chá de pessêgo", "Suco de morango" }));
@@ -155,7 +155,7 @@ public class pedido extends javax.swing.JFrame {
         jButton1.setBackground(new java.awt.Color(154, 88, 51));
         jButton1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jButton1.setForeground(new java.awt.Color(0, 0, 0));
-        jButton1.setText("Voltar Menu");
+        jButton1.setText("« Voltar Menu");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -171,7 +171,9 @@ public class pedido extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 475, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
