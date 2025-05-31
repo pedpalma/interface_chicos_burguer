@@ -65,7 +65,7 @@ public class porcao extends javax.swing.JFrame {
         tempero.setBackground(new java.awt.Color(255, 255, 255));
         tempero.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         tempero.setForeground(new java.awt.Color(0, 0, 0));
-        tempero.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Água", "Coca-cola", "Pepsi Twist", "Chá de pessêgo", "Suco de morango" }));
+        tempero.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Chili", "Mostarda e mel", "Sal e pimenta", "Paprica e alho", "Alho e limão", "Nenhum" }));
         tempero.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 temperoActionPerformed(evt);
@@ -76,7 +76,7 @@ public class porcao extends javax.swing.JFrame {
         base_porcao.setBackground(new java.awt.Color(255, 255, 255));
         base_porcao.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         base_porcao.setForeground(new java.awt.Color(0, 0, 0));
-        base_porcao.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Croissaint de chocolate", "Bolo de cenoura", "Sorvete de baunilha", "Salada de frutas" }));
+        base_porcao.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Batata", "Cebola", "Queijo", "Tapioca", "Massa", "Ovo" }));
         base_porcao.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 base_porcaoActionPerformed(evt);

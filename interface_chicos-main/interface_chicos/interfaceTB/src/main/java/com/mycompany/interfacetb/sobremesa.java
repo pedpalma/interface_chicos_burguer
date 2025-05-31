@@ -28,22 +28,22 @@ public class sobremesa extends javax.swing.JFrame {
 
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jComboBox2 = new javax.swing.JComboBox<>();
+        sabor_sobre = new javax.swing.JComboBox<>();
+        tipo_sobre = new javax.swing.JComboBox<>();
         jLabel5 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jRadioButton1 = new javax.swing.JRadioButton();
+        congelado = new javax.swing.JRadioButton();
         jLabel10 = new javax.swing.JLabel();
-        jRadioButton2 = new javax.swing.JRadioButton();
-        jRadioButton3 = new javax.swing.JRadioButton();
+        frio = new javax.swing.JRadioButton();
+        quente = new javax.swing.JRadioButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        area_sobre = new javax.swing.JTextArea();
         jLabel11 = new javax.swing.JLabel();
         salvar_sobremesa = new javax.swing.JButton();
         limpar_sobremesa = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
+        nome_sobre = new javax.swing.JTextField();
         voltar_menu = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -59,64 +59,70 @@ public class sobremesa extends javax.swing.JFrame {
         });
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 210, -1));
 
-        jComboBox1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Água", "Coca-cola", "Pepsi Twist", "Chá de pessêgo", "Suco de morango" }));
-        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+        sabor_sobre.setBackground(new java.awt.Color(255, 255, 255));
+        sabor_sobre.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        sabor_sobre.setForeground(new java.awt.Color(0, 0, 0));
+        sabor_sobre.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Morango", "Limão", "Uva", "Banana", "Laranja", "Maracujá", "Frutas Vermelhas", "Vinho e Abacaxi", "Nata" }));
+        sabor_sobre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox1ActionPerformed(evt);
+                sabor_sobreActionPerformed(evt);
             }
         });
-        jPanel2.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(598, 74, 234, 30));
+        jPanel2.add(sabor_sobre, new org.netbeans.lib.awtextra.AbsoluteConstraints(598, 74, 234, 30));
 
-        jComboBox2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Croissaint de chocolate", "Bolo de cenoura", "Sorvete de baunilha", "Salada de frutas" }));
-        jComboBox2.addActionListener(new java.awt.event.ActionListener() {
+        tipo_sobre.setBackground(new java.awt.Color(255, 255, 255));
+        tipo_sobre.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        tipo_sobre.setForeground(new java.awt.Color(0, 0, 0));
+        tipo_sobre.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Croissaint", "Bolo", "Sorvete", "Salada de frutas", "Torta" }));
+        tipo_sobre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox2ActionPerformed(evt);
+                tipo_sobreActionPerformed(evt);
             }
         });
-        jPanel2.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(228, 165, 282, 30));
+        jPanel2.add(tipo_sobre, new org.netbeans.lib.awtextra.AbsoluteConstraints(228, 165, 282, 30));
 
         jLabel5.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Escolha o sabor!");
-        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(598, 40, -1, -1));
+        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 40, -1, -1));
         jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("Escolha o tipo!");
-        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(292, 131, -1, -1));
+        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 130, -1, -1));
 
         jLabel8.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(0, 0, 0));
         jLabel8.setText("Categoria");
         jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(649, 134, -1, -1));
 
-        jRadioButton1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jRadioButton1.setForeground(new java.awt.Color(0, 0, 0));
-        jRadioButton1.setText("Congelado");
-        jPanel2.add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(565, 174, -1, -1));
+        congelado.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        congelado.setForeground(new java.awt.Color(0, 0, 0));
+        congelado.setText("Congelado");
+        jPanel2.add(congelado, new org.netbeans.lib.awtextra.AbsoluteConstraints(565, 174, -1, -1));
 
         jLabel10.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(0, 0, 0));
         jLabel10.setText("Nome da Sobremesa!");
-        jPanel2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(263, 42, -1, -1));
+        jPanel2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 40, -1, -1));
 
-        jRadioButton2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jRadioButton2.setForeground(new java.awt.Color(0, 0, 0));
-        jRadioButton2.setText("Frio");
-        jPanel2.add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(684, 174, -1, -1));
+        frio.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        frio.setForeground(new java.awt.Color(0, 0, 0));
+        frio.setText("Frio");
+        jPanel2.add(frio, new org.netbeans.lib.awtextra.AbsoluteConstraints(684, 174, -1, -1));
 
-        jRadioButton3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jRadioButton3.setForeground(new java.awt.Color(0, 0, 0));
-        jRadioButton3.setText("Quente");
-        jPanel2.add(jRadioButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(755, 174, -1, -1));
+        quente.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        quente.setForeground(new java.awt.Color(0, 0, 0));
+        quente.setText("Quente");
+        jPanel2.add(quente, new org.netbeans.lib.awtextra.AbsoluteConstraints(755, 174, -1, -1));
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jTextArea1.setRows(5);
-        jScrollPane1.setViewportView(jTextArea1);
+        area_sobre.setBackground(new java.awt.Color(255, 255, 255));
+        area_sobre.setColumns(20);
+        area_sobre.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        area_sobre.setForeground(new java.awt.Color(0, 0, 0));
+        area_sobre.setRows(5);
+        jScrollPane1.setViewportView(area_sobre);
 
         jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 260, 463, 135));
 
@@ -140,10 +146,17 @@ public class sobremesa extends javax.swing.JFrame {
         limpar_sobremesa.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         limpar_sobremesa.setForeground(new java.awt.Color(0, 0, 0));
         limpar_sobremesa.setText("Limpar");
+        limpar_sobremesa.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                limpar_sobremesaActionPerformed(evt);
+            }
+        });
         jPanel2.add(limpar_sobremesa, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, 185, 42));
 
-        jTextField1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jPanel2.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(228, 76, 282, -1));
+        nome_sobre.setBackground(new java.awt.Color(255, 255, 255));
+        nome_sobre.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        nome_sobre.setForeground(new java.awt.Color(0, 0, 0));
+        jPanel2.add(nome_sobre, new org.netbeans.lib.awtextra.AbsoluteConstraints(228, 76, 282, -1));
 
         voltar_menu.setBackground(new java.awt.Color(154, 88, 51));
         voltar_menu.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
@@ -172,13 +185,13 @@ public class sobremesa extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+    private void sabor_sobreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sabor_sobreActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox1ActionPerformed
+    }//GEN-LAST:event_sabor_sobreActionPerformed
 
-    private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
+    private void tipo_sobreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tipo_sobreActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox2ActionPerformed
+    }//GEN-LAST:event_tipo_sobreActionPerformed
 
     private void salvar_sobremesaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salvar_sobremesaActionPerformed
         // TODO add your handling code here:
@@ -195,6 +208,17 @@ public class sobremesa extends javax.swing.JFrame {
         dispose();
         new inicio().setVisible(true);
     }//GEN-LAST:event_jLabel1MouseClicked
+
+    private void limpar_sobremesaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_limpar_sobremesaActionPerformed
+        // TODO add your handling code here:
+        nome_sobre.setText("");
+        sabor_sobre.setSelectedIndex(0);
+        tipo_sobre.setSelectedIndex(0);
+        quente.setSelected(false);
+        frio.setSelected(false);
+        congelado.setSelected(false);
+        area_sobre.setText("");
+    }//GEN-LAST:event_limpar_sobremesaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -232,8 +256,9 @@ public class sobremesa extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
+    private javax.swing.JTextArea area_sobre;
+    private javax.swing.JRadioButton congelado;
+    private javax.swing.JRadioButton frio;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -242,14 +267,13 @@ public class sobremesa extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton3;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JButton limpar_sobremesa;
+    private javax.swing.JTextField nome_sobre;
+    private javax.swing.JRadioButton quente;
+    private javax.swing.JComboBox<String> sabor_sobre;
     private javax.swing.JButton salvar_sobremesa;
+    private javax.swing.JComboBox<String> tipo_sobre;
     private javax.swing.JButton voltar_menu;
     // End of variables declaration//GEN-END:variables
 }

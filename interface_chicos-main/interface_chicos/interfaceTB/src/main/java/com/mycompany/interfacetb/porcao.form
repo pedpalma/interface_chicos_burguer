@@ -81,13 +81,14 @@
               <Color blue="0" green="0" red="0" type="rgb"/>
             </Property>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-              <StringArray count="6">
+              <StringArray count="7">
                 <StringItem index="0" value=" "/>
-                <StringItem index="1" value="&#xc1;gua"/>
-                <StringItem index="2" value="Coca-cola"/>
-                <StringItem index="3" value="Pepsi Twist"/>
-                <StringItem index="4" value="Ch&#xe1; de pess&#xea;go"/>
-                <StringItem index="5" value="Suco de morango"/>
+                <StringItem index="1" value="Chili"/>
+                <StringItem index="2" value="Mostarda e mel"/>
+                <StringItem index="3" value="Sal e pimenta"/>
+                <StringItem index="4" value="Paprica e alho"/>
+                <StringItem index="5" value="Alho e lim&#xe3;o"/>
+                <StringItem index="6" value="Nenhum"/>
               </StringArray>
             </Property>
           </Properties>
@@ -115,12 +116,14 @@
               <Color blue="0" green="0" red="0" type="rgb"/>
             </Property>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-              <StringArray count="5">
+              <StringArray count="7">
                 <StringItem index="0" value=" "/>
-                <StringItem index="1" value="Croissaint de chocolate"/>
-                <StringItem index="2" value="Bolo de cenoura"/>
-                <StringItem index="3" value="Sorvete de baunilha"/>
-                <StringItem index="4" value="Salada de frutas"/>
+                <StringItem index="1" value="Batata"/>
+                <StringItem index="2" value="Cebola"/>
+                <StringItem index="3" value="Queijo"/>
+                <StringItem index="4" value="Tapioca"/>
+                <StringItem index="5" value="Massa"/>
+                <StringItem index="6" value="Ovo"/>
               </StringArray>
             </Property>
           </Properties>

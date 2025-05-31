@@ -73,7 +73,7 @@ public class lanche extends javax.swing.JFrame {
         tipo_queijo.setBackground(new java.awt.Color(255, 255, 255));
         tipo_queijo.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         tipo_queijo.setForeground(new java.awt.Color(0, 0, 0));
-        tipo_queijo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Cheddar", "Mussarela", "Gouda", "Parmesão", "Inglês" }));
+        tipo_queijo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Cheddar", "Mussarela", "Gouda", "Parmesão", "Inglês", "Nenhum" }));
         tipo_queijo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tipo_queijoActionPerformed(evt);
@@ -234,6 +234,8 @@ public class lanche extends javax.swing.JFrame {
                 l.setMolho("Barbecue");
             }
         area_lanche.setText(l.status_lanche());
+        }else if(valor==2){
+           System.exit(0);
         }
     }//GEN-LAST:event_salvar_lancheActionPerformed
 

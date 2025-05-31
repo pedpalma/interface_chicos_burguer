@@ -301,6 +301,8 @@ public class pedido extends javax.swing.JFrame {
                 ped.setMolho_pedido("Maionese Verde");
             }
         area_pedido.setText(ped.status_pedido());
+        }else if(valor==2){
+            System.exit(0);
         }
     }//GEN-LAST:event_salvar_pedidoActionPerformed
 
