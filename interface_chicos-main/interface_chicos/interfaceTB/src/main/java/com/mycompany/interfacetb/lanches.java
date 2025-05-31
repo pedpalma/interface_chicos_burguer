@@ -1,7 +1,7 @@
 package com.mycompany.interfacetb;
 
 public class lanches {
-    private String nome_lanche, tipo_queijo, tipo_carne, tipo_pao, molho, acompanhamento;
+    private String nome_lanche, tipo_queijo, tipo_carne, tipo_pao, molho;
 
     public String getNome_lanche() {
         return nome_lanche;
@@ -42,15 +42,6 @@ public class lanches {
     public void setMolho(String molho) {
         this.molho = molho;
     }
-
-    public String getAcompanhamento() {
-        return acompanhamento;
-    }
-
-    public void setAcompanhamento(String acompanhamento) {
-        this.acompanhamento = acompanhamento;
-    }
-    
     
     public String status_lanche(){
         return"-----Novo Lanche-----"+
@@ -58,7 +49,6 @@ public class lanches {
                 "\nTipo do queijo: "+ this.tipo_queijo+
                 "\nTipo da carne: "+ this.tipo_carne+
                 "\nTipo do pão: "+ this.tipo_pao+
-                "\nMolho: "+this.molho+
-                "\nAcompanhamento: "+this.acompanhamento;
+                "\nMolho: "+this.molho;
     }
 }
