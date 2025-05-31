@@ -279,7 +279,7 @@ public class lanche extends javax.swing.JFrame {
     private void voltar_menuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_voltar_menuActionPerformed
         // TODO add your handling code here:
         dispose();
-        new inicio().setVisible(true);
+        new carregamento().setVisible(true);
     }//GEN-LAST:event_voltar_menuActionPerformed
 
     /**

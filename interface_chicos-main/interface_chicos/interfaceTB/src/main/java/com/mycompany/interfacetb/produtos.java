@@ -161,22 +161,29 @@ public class produtos extends javax.swing.JFrame {
 
     private void ir_sobremesaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ir_sobremesaActionPerformed
         // TODO add your handling code here:
+        dispose();
+        new sobremesa().setVisible(true);
 
     }//GEN-LAST:event_ir_sobremesaActionPerformed
 
     private void ir_lancheActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ir_lancheActionPerformed
         // TODO add your handling code here:
         dispose();
+        new lanche().setVisible(true);
 
     }//GEN-LAST:event_ir_lancheActionPerformed
 
     private void ir_porcaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ir_porcaoActionPerformed
         // TODO add your handling code here:
+        dispose();
+        new porcao().setVisible(true);
 
     }//GEN-LAST:event_ir_porcaoActionPerformed
 
     private void ir_bebidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ir_bebidaActionPerformed
         // TODO add your handling code here:
+        dispose();
+        new bebida().setVisible(true);
 
     }//GEN-LAST:event_ir_bebidaActionPerformed
 
