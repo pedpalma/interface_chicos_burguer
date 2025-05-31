@@ -4,10 +4,8 @@
  */
 package com.mycompany.interfacetb;
 
-/**
- *
- * @author 25170628
- */
+import javax.swing.JOptionPane;
+        
 public class pedido extends javax.swing.JFrame {
 
     /**
@@ -42,7 +40,7 @@ public class pedido extends javax.swing.JFrame {
         barbecue = new javax.swing.JRadioButton();
         maionese_verde = new javax.swing.JRadioButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        area_lanches = new javax.swing.JTextArea();
+        area_pedido = new javax.swing.JTextArea();
         jLabel11 = new javax.swing.JLabel();
         salvar_pedido = new javax.swing.JButton();
         limpar_pedido = new javax.swing.JButton();
@@ -116,12 +114,12 @@ public class pedido extends javax.swing.JFrame {
         maionese_verde.setForeground(new java.awt.Color(0, 0, 0));
         maionese_verde.setText("Maionese Verde");
 
-        area_lanches.setBackground(new java.awt.Color(255, 255, 255));
-        area_lanches.setColumns(20);
-        area_lanches.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        area_lanches.setForeground(new java.awt.Color(0, 0, 0));
-        area_lanches.setRows(5);
-        jScrollPane1.setViewportView(area_lanches);
+        area_pedido.setBackground(new java.awt.Color(255, 255, 255));
+        area_pedido.setColumns(20);
+        area_pedido.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        area_pedido.setForeground(new java.awt.Color(0, 0, 0));
+        area_pedido.setRows(5);
+        jScrollPane1.setViewportView(area_pedido);
 
         jLabel11.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(0, 0, 0));
@@ -287,6 +285,23 @@ public class pedido extends javax.swing.JFrame {
 
     private void salvar_pedidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salvar_pedidoActionPerformed
         // TODO add your handling code here:
+        int valor = JOptionPane.showConfirmDialog(null,"Deseja salvar?","Opções", JOptionPane.YES_NO_CANCEL_OPTION);
+        
+        if(valor==0){
+            pedidoOBJ ped = new pedidoOBJ();
+            ped.setLanche_pedido((String)lanche.getSelectedItem());
+            ped.setBebida_pedido((String)bebida.getSelectedItem());
+            ped.setPorcao_pedido((String)porcao.getSelectedItem());
+            ped.setSobremesa_pedido((String)sobremesa.getSelectedItem());
+            if(alho_mostarda.isSelected()){
+                ped.setMolho_pedido("Alho e Mostarda");
+            }else if(barbecue.isSelected()){
+                ped.setMolho_pedido("Barbecue");
+            }else{
+                ped.setMolho_pedido("Maionese Verde");
+            }
+        area_pedido.setText(ped.status_pedido());
+        }
     }//GEN-LAST:event_salvar_pedidoActionPerformed
 
     private void limpar_pedidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_limpar_pedidoActionPerformed
@@ -298,7 +313,7 @@ public class pedido extends javax.swing.JFrame {
         maionese_verde.setSelected(false);
         barbecue.setSelected(false);
         alho_mostarda.setSelected(false);
-        area_lanches.setText("");
+        area_pedido.setText("");
     }//GEN-LAST:event_limpar_pedidoActionPerformed
 
     /**
@@ -338,7 +353,7 @@ public class pedido extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JRadioButton alho_mostarda;
-    private javax.swing.JTextArea area_lanches;
+    private javax.swing.JTextArea area_pedido;
     private javax.swing.JRadioButton barbecue;
     private javax.swing.JComboBox<String> bebida;
     private javax.swing.JLabel jLabel1;

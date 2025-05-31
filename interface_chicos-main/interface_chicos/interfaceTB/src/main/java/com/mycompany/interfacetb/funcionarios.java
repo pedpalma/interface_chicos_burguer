@@ -399,6 +399,7 @@ public class funcionarios extends javax.swing.JFrame {
         uniforme.setSelected(false);
         bene_s.setSelected(false);
         bene_n.setSelected(false);
+        area_func.setText("");
     }//GEN-LAST:event_limpar_funcActionPerformed
 
     private void nome_funcFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_nome_funcFocusGained
