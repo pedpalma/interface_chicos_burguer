@@ -252,6 +252,14 @@ public class lanche extends javax.swing.JFrame {
 
     private void limpar_lancheActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_limpar_lancheActionPerformed
         // TODO add your handling code here:
+        nome_lanche.setText("");
+        tipo_queijo.setSelectedIndex(0);
+        tipo_carne.setSelectedIndex(0);
+        tipo_pao.setSelectedIndex(0);
+        maionese.setSelected(false);
+        ketchup.setSelected(false);
+        barbecue.setSelected(false);
+        area_lanche.setText("");
         
     }//GEN-LAST:event_limpar_lancheActionPerformed
 
