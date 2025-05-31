@@ -72,7 +72,7 @@ public class cadastro1 extends javax.swing.JFrame {
                 botaoActionPerformed(evt);
             }
         });
-        jPanel1.add(botao, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 370, 86, 42));
+        jPanel1.add(botao, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 370, 86, 42));
 
         jLabel1.setFont(new java.awt.Font("Arial Black", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 0, 0));
@@ -293,13 +293,13 @@ public class cadastro1 extends javax.swing.JFrame {
         jButton1.setBackground(new java.awt.Color(154, 88, 51));
         jButton1.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
         jButton1.setForeground(new java.awt.Color(0, 0, 0));
-        jButton1.setText("Voltar Menu");
+        jButton1.setText("« Voltar Menu");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 370, -1, 43));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 370, -1, 43));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
