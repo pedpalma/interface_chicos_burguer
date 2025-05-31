@@ -41,6 +41,7 @@ public class sobremesaOBJ {
                 "\nNome da Sobremesa: "+this.nome_sobremesa+
                 "\nSabor: "+this.sabor_sobremsa+
                 "\nTipo: "+this.tipo_sobremesa+
-                "\nCategoria: "+this.categoria_sobremesa;
+                "\nCategoria: "+this.categoria_sobremesa+
+                "\n";
     }
 }

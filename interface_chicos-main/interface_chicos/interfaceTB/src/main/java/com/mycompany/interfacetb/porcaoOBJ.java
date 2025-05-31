@@ -40,7 +40,8 @@ public class porcaoOBJ {
                 "\nNome: "+this.nome_porcao+
                 "\nTempero: "+this.tempero+
                 "\nBase: "+this.base_porcao+
-                "\nTipo: "+this.tipo_porcao;
+                "\nTipo: "+this.tipo_porcao+
+                "\n";
     }
     
 }

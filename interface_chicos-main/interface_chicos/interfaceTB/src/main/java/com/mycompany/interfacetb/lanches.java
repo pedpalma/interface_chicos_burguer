@@ -49,6 +49,7 @@ public class lanches {
                 "\nTipo do queijo: "+ this.tipo_queijo+
                 "\nTipo da carne: "+ this.tipo_carne+
                 "\nTipo do pão: "+ this.tipo_pao+
-                "\nMolho: "+this.molho;
+                "\nMolho: "+this.molho+
+                "\n";
     }
 }

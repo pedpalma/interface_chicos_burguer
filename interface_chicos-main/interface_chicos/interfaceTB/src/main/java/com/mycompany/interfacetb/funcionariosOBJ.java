@@ -58,6 +58,7 @@ public class funcionariosOBJ {
                 "\nCPF: "+this.cpf+
                 "\nCargo: "+this.cargo+
                 "\nDeseja receber o Uniforme? "+this.uniforme+
-                "\nDeseja receber o Vale Transporte? "+this.vt;
+                "\nDeseja receber o Vale Transporte? "+this.vt+
+                "\n";
     }
 }

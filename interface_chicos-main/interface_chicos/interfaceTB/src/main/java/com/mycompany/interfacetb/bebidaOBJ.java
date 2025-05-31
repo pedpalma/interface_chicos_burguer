@@ -41,6 +41,7 @@ public class bebidaOBJ {
                 "\nNome da Bebida: "+this.nome_bebida+
                "\nBase: "+this.base_bebida+
                 "\nTipo: "+this.tipo_bebida+
-                "\nSabor: "+this.sabor_bebida;
+                "\nSabor: "+this.sabor_bebida+
+                "\n";
     }
 }
