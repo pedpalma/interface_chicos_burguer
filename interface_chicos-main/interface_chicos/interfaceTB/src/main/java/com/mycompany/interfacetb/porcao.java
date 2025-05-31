@@ -44,8 +44,8 @@ public class porcao extends javax.swing.JFrame {
         jLabel11 = new javax.swing.JLabel();
         salvar_porcao = new javax.swing.JButton();
         limpar_porcao = new javax.swing.JButton();
-        voltar_menu = new javax.swing.JButton();
         jTextField1 = new javax.swing.JTextField();
+        voltar_menu = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -124,17 +124,17 @@ public class porcao extends javax.swing.JFrame {
         limpar_porcao.setForeground(new java.awt.Color(0, 0, 0));
         limpar_porcao.setText("Limpar");
 
+        jTextField1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+
         voltar_menu.setBackground(new java.awt.Color(154, 88, 51));
         voltar_menu.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         voltar_menu.setForeground(new java.awt.Color(0, 0, 0));
-        voltar_menu.setText("« Voltar Menu");
+        voltar_menu.setText("« Voltar Produtos");
         voltar_menu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 voltar_menuActionPerformed(evt);
             }
         });
-
-        jTextField1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -176,15 +176,15 @@ public class porcao extends javax.swing.JFrame {
                                         .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(30, 30, 30)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(salvar_porcao, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(limpar_porcao, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(voltar_menu))
-                        .addGap(106, 106, 106)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(limpar_porcao, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(voltar_menu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(salvar_porcao, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(75, 75, 75)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel11)
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 463, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(27, Short.MAX_VALUE))
+                .addContainerGap(39, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -262,7 +262,7 @@ public class porcao extends javax.swing.JFrame {
     private void voltar_menuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_voltar_menuActionPerformed
         // TODO add your handling code here:
         dispose();
-        new inicio().setVisible(true);
+        new carregamento().setVisible(true);
     }//GEN-LAST:event_voltar_menuActionPerformed
 
     /**
