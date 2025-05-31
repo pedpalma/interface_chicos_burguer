@@ -1,7 +1,7 @@
 package com.mycompany.interfacetb;
 
 public class porcaoOBJ {
-    private String nome_porcao, tempero, base, tipo;
+    private String nome_porcao, tempero, base_porcao, tipo_porcao;
 
     public String getNome_porcao() {
         return nome_porcao;
@@ -20,27 +20,27 @@ public class porcaoOBJ {
     }
 
     public String getBase() {
-        return base;
+        return base_porcao;
     }
 
     public void setBase(String base) {
-        this.base = base;
+        this.base_porcao = base;
     }
 
     public String getTipo() {
-        return tipo;
+        return tipo_porcao;
     }
 
     public void setTipo(String tipo) {
-        this.tipo = tipo;
+        this.tipo_porcao = tipo;
     }
     
     public String status_porcao(){
         return"-----Nova Porção-----"+
                 "\nNome: "+this.nome_porcao+
                 "\nTempero: "+this.tempero+
-                "\nBase: "+this.base+
-                "\nTipo: "+this.tipo;
+                "\nBase: "+this.base_porcao+
+                "\nTipo: "+this.tipo_porcao;
     }
     
 }
