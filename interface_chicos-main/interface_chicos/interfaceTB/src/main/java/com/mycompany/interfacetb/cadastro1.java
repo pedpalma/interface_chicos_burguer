@@ -32,13 +32,13 @@ public class cadastro1 extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         limpar_cadasto = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
-        nome = new javax.swing.JTextField();
+        nome_cliente = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         fem = new javax.swing.JRadioButton();
         masc = new javax.swing.JRadioButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        idade = new javax.swing.JTextField();
+        cpf_cliente = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
         profissao = new javax.swing.JComboBox<>();
         jLabel6 = new javax.swing.JLabel();
@@ -86,21 +86,21 @@ public class cadastro1 extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(154, 88, 51));
 
-        nome.setBackground(new java.awt.Color(255, 255, 255));
-        nome.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        nome.setForeground(new java.awt.Color(0, 0, 0));
-        nome.setText("Digite seu nome");
-        nome.addFocusListener(new java.awt.event.FocusAdapter() {
+        nome_cliente.setBackground(new java.awt.Color(255, 255, 255));
+        nome_cliente.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        nome_cliente.setForeground(new java.awt.Color(0, 0, 0));
+        nome_cliente.setText("Digite seu nome");
+        nome_cliente.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
-                nomeFocusGained(evt);
+                nome_clienteFocusGained(evt);
             }
             public void focusLost(java.awt.event.FocusEvent evt) {
-                nomeFocusLost(evt);
+                nome_clienteFocusLost(evt);
             }
         });
-        nome.addActionListener(new java.awt.event.ActionListener() {
+        nome_cliente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                nomeActionPerformed(evt);
+                nome_clienteActionPerformed(evt);
             }
         });
 
@@ -134,21 +134,21 @@ public class cadastro1 extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("CPF");
 
-        idade.setBackground(new java.awt.Color(255, 255, 255));
-        idade.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        idade.setForeground(new java.awt.Color(0, 0, 0));
-        idade.setText("Digite seu CPF");
-        idade.addFocusListener(new java.awt.event.FocusAdapter() {
+        cpf_cliente.setBackground(new java.awt.Color(255, 255, 255));
+        cpf_cliente.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        cpf_cliente.setForeground(new java.awt.Color(0, 0, 0));
+        cpf_cliente.setText("Digite seu CPF");
+        cpf_cliente.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
-                idadeFocusGained(evt);
+                cpf_clienteFocusGained(evt);
             }
             public void focusLost(java.awt.event.FocusEvent evt) {
-                idadeFocusLost(evt);
+                cpf_clienteFocusLost(evt);
             }
         });
-        idade.addActionListener(new java.awt.event.ActionListener() {
+        cpf_cliente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                idadeActionPerformed(evt);
+                cpf_clienteActionPerformed(evt);
             }
         });
 
@@ -233,8 +233,8 @@ public class cadastro1 extends javax.swing.JFrame {
                             .addComponent(jLabel5))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(nome, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(idade, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(nome_cliente, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(cpf_cliente, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(profissao, 0, 214, Short.MAX_VALUE)))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jLabel3)
@@ -251,7 +251,7 @@ public class cadastro1 extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(22, 22, 22)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(nome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(nome_cliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel2))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -262,7 +262,7 @@ public class cadastro1 extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(idade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(cpf_cliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -359,8 +359,8 @@ public class cadastro1 extends javax.swing.JFrame {
         
         if(valor==0){
             Pessoa p = new Pessoa();
-            p.setNome(nome.getText());
-            p.setIdade(idade.getText());
+            p.setNome(nome_cliente.getText());
+            p.setIdade(cpf_cliente.getText());
             p.setProfissao((String) profissao.getSelectedItem());
             p.setReceberemail(receberemail.isSelected()? "Sim":"Não");
             if (fem.isSelected()){
@@ -384,8 +384,8 @@ public class cadastro1 extends javax.swing.JFrame {
 
     private void limpar_cadastoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_limpar_cadastoActionPerformed
         // TODO add your handling code here:
-        nome.setText("");
-        idade.setText("");
+        nome_cliente.setText("");
+        cpf_cliente.setText("");
         fem.setSelected(false);
         masc.setSelected(false);
         nb.setSelected(false);
@@ -395,23 +395,23 @@ public class cadastro1 extends javax.swing.JFrame {
         area.setText("");
     }//GEN-LAST:event_limpar_cadastoActionPerformed
 
-    private void idadeFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_idadeFocusGained
+    private void cpf_clienteFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_cpf_clienteFocusGained
         // TODO add your handling code here:
-        if(idade.getText().equals("Digite seu CPF")){
-            idade.setText("");
+        if(cpf_cliente.getText().equals("Digite seu CPF")){
+            cpf_cliente.setText("");
         }
-    }//GEN-LAST:event_idadeFocusGained
+    }//GEN-LAST:event_cpf_clienteFocusGained
 
-    private void idadeFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_idadeFocusLost
+    private void cpf_clienteFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_cpf_clienteFocusLost
         // TODO add your handling code here:
-        if(idade.getText().equals("")){
-            idade.setText("Digite seu CPF");
+        if(cpf_cliente.getText().equals("")){
+            cpf_cliente.setText("Digite seu CPF");
         }
-    }//GEN-LAST:event_idadeFocusLost
+    }//GEN-LAST:event_cpf_clienteFocusLost
 
-    private void idadeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_idadeActionPerformed
+    private void cpf_clienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cpf_clienteActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_idadeActionPerformed
+    }//GEN-LAST:event_cpf_clienteActionPerformed
 
     private void mascActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mascActionPerformed
         // TODO add your handling code here:
@@ -419,23 +419,23 @@ public class cadastro1 extends javax.swing.JFrame {
         nb.setSelected(false);
     }//GEN-LAST:event_mascActionPerformed
 
-    private void nomeFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_nomeFocusGained
+    private void nome_clienteFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_nome_clienteFocusGained
         // TODO add your handling code here:
-        if(nome.getText().equals("Digite seu nome")){
-            nome.setText("");
+        if(nome_cliente.getText().equals("Digite seu nome")){
+            nome_cliente.setText("");
         }
-    }//GEN-LAST:event_nomeFocusGained
+    }//GEN-LAST:event_nome_clienteFocusGained
 
-    private void nomeFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_nomeFocusLost
+    private void nome_clienteFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_nome_clienteFocusLost
         // TODO add your handling code here:
-        if(nome.getText().equals("")){
-            nome.setText("Digite seu nome");
+        if(nome_cliente.getText().equals("")){
+            nome_cliente.setText("Digite seu nome");
         }
-    }//GEN-LAST:event_nomeFocusLost
+    }//GEN-LAST:event_nome_clienteFocusLost
 
-    private void nomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nomeActionPerformed
+    private void nome_clienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nome_clienteActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_nomeActionPerformed
+    }//GEN-LAST:event_nome_clienteActionPerformed
 
     private void nlsimActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nlsimActionPerformed
         // TODO add your handling code here:
@@ -505,8 +505,8 @@ public class cadastro1 extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextArea area;
     private javax.swing.ButtonGroup cadastro;
+    private javax.swing.JTextField cpf_cliente;
     private javax.swing.JRadioButton fem;
-    private javax.swing.JTextField idade;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -523,7 +523,7 @@ public class cadastro1 extends javax.swing.JFrame {
     private javax.swing.JLabel news;
     private javax.swing.JRadioButton nlnao;
     private javax.swing.JRadioButton nlsim;
-    private javax.swing.JTextField nome;
+    private javax.swing.JTextField nome_cliente;
     private javax.swing.JComboBox<String> profissao;
     private javax.swing.JCheckBox receberemail;
     private javax.swing.JButton salvar_cadasto;

@@ -32,20 +32,20 @@ public class funcionarios extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         limpar_func = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
-        nome = new javax.swing.JTextField();
+        nome_func = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         fem = new javax.swing.JRadioButton();
         masc = new javax.swing.JRadioButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        idade = new javax.swing.JTextField();
+        cpf_func = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
-        profissao = new javax.swing.JComboBox<>();
+        setor = new javax.swing.JComboBox<>();
         jLabel6 = new javax.swing.JLabel();
-        receberemail = new javax.swing.JCheckBox();
+        uniforme = new javax.swing.JCheckBox();
         news = new javax.swing.JLabel();
-        nlnao = new javax.swing.JRadioButton();
-        nlsim = new javax.swing.JRadioButton();
+        bene_n = new javax.swing.JRadioButton();
+        bene_s = new javax.swing.JRadioButton();
         nb = new javax.swing.JRadioButton();
         jLabel8 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
@@ -87,21 +87,21 @@ public class funcionarios extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(154, 88, 51));
 
-        nome.setBackground(new java.awt.Color(255, 255, 255));
-        nome.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        nome.setForeground(new java.awt.Color(0, 0, 0));
-        nome.setText("Digite seu nome");
-        nome.addFocusListener(new java.awt.event.FocusAdapter() {
+        nome_func.setBackground(new java.awt.Color(255, 255, 255));
+        nome_func.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        nome_func.setForeground(new java.awt.Color(0, 0, 0));
+        nome_func.setText("Digite seu nome");
+        nome_func.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
-                nomeFocusGained(evt);
+                nome_funcFocusGained(evt);
             }
             public void focusLost(java.awt.event.FocusEvent evt) {
-                nomeFocusLost(evt);
+                nome_funcFocusLost(evt);
             }
         });
-        nome.addActionListener(new java.awt.event.ActionListener() {
+        nome_func.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                nomeActionPerformed(evt);
+                nome_funcActionPerformed(evt);
             }
         });
 
@@ -135,21 +135,21 @@ public class funcionarios extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("CPF");
 
-        idade.setBackground(new java.awt.Color(255, 255, 255));
-        idade.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        idade.setForeground(new java.awt.Color(0, 0, 0));
-        idade.setText("Digite seu CPF");
-        idade.addFocusListener(new java.awt.event.FocusAdapter() {
+        cpf_func.setBackground(new java.awt.Color(255, 255, 255));
+        cpf_func.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        cpf_func.setForeground(new java.awt.Color(0, 0, 0));
+        cpf_func.setText("Digite seu CPF");
+        cpf_func.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
-                idadeFocusGained(evt);
+                cpf_funcFocusGained(evt);
             }
             public void focusLost(java.awt.event.FocusEvent evt) {
-                idadeFocusLost(evt);
+                cpf_funcFocusLost(evt);
             }
         });
-        idade.addActionListener(new java.awt.event.ActionListener() {
+        cpf_func.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                idadeActionPerformed(evt);
+                cpf_funcActionPerformed(evt);
             }
         });
 
@@ -157,20 +157,20 @@ public class funcionarios extends javax.swing.JFrame {
         jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Setor:");
 
-        profissao.setBackground(new java.awt.Color(255, 255, 255));
-        profissao.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Garoto de Programa", "TikToker", "Cozinheiro", "Bodybuilder", "NOC", "Motorista", "Mecânico" }));
+        setor.setBackground(new java.awt.Color(255, 255, 255));
+        setor.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Garoto de Programa", "TikToker", "Cozinheiro", "Bodybuilder", "NOC", "Motorista", "Mecânico" }));
 
         jLabel6.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("Deseja receber o uniforme?");
 
-        receberemail.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        receberemail.setForeground(new java.awt.Color(0, 0, 0));
-        receberemail.setText("Sim");
-        receberemail.setToolTipText("");
-        receberemail.addActionListener(new java.awt.event.ActionListener() {
+        uniforme.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        uniforme.setForeground(new java.awt.Color(0, 0, 0));
+        uniforme.setText("Sim");
+        uniforme.setToolTipText("");
+        uniforme.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                receberemailActionPerformed(evt);
+                uniformeActionPerformed(evt);
             }
         });
 
@@ -179,21 +179,21 @@ public class funcionarios extends javax.swing.JFrame {
         news.setForeground(new java.awt.Color(0, 0, 0));
         news.setText("Deseja receber VA+VT?");
 
-        nlnao.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        nlnao.setForeground(new java.awt.Color(0, 0, 0));
-        nlnao.setText("Não");
-        nlnao.addActionListener(new java.awt.event.ActionListener() {
+        bene_n.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        bene_n.setForeground(new java.awt.Color(0, 0, 0));
+        bene_n.setText("Não");
+        bene_n.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                nlnaoActionPerformed(evt);
+                bene_nActionPerformed(evt);
             }
         });
 
-        nlsim.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        nlsim.setForeground(new java.awt.Color(0, 0, 0));
-        nlsim.setText("Sim");
-        nlsim.addActionListener(new java.awt.event.ActionListener() {
+        bene_s.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        bene_s.setForeground(new java.awt.Color(0, 0, 0));
+        bene_s.setText("Sim");
+        bene_s.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                nlsimActionPerformed(evt);
+                bene_sActionPerformed(evt);
             }
         });
 
@@ -216,13 +216,13 @@ public class funcionarios extends javax.swing.JFrame {
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(news)
                         .addGap(14, 14, 14)
-                        .addComponent(nlsim)
+                        .addComponent(bene_s)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(nlnao))
+                        .addComponent(bene_n))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jLabel6)
                         .addGap(18, 18, 18)
-                        .addComponent(receberemail))
+                        .addComponent(uniforme))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel2)
@@ -232,9 +232,9 @@ public class funcionarios extends javax.swing.JFrame {
                             .addComponent(jLabel5))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(nome, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(idade, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(profissao, 0, 214, Short.MAX_VALUE)))
+                            .addComponent(nome_func, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(cpf_func, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(setor, 0, 214, Short.MAX_VALUE)))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jLabel3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -250,7 +250,7 @@ public class funcionarios extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(22, 22, 22)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(nome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(nome_func, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel2))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -261,20 +261,20 @@ public class funcionarios extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(idade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(cpf_func, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(profissao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(setor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
-                    .addComponent(receberemail))
+                    .addComponent(uniforme))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(news)
-                    .addComponent(nlnao)
-                    .addComponent(nlsim))
+                    .addComponent(bene_n)
+                    .addComponent(bene_s))
                 .addContainerGap(25, Short.MAX_VALUE))
         );
 
@@ -371,23 +371,23 @@ public class funcionarios extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_limpar_funcActionPerformed
 
-    private void nomeFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_nomeFocusGained
+    private void nome_funcFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_nome_funcFocusGained
         // TODO add your handling code here:
-        if(nome.getText().equals("Digite seu nome")){
-            nome.setText("");
+        if(nome_func.getText().equals("Digite seu nome")){
+            nome_func.setText("");
         }
-    }//GEN-LAST:event_nomeFocusGained
+    }//GEN-LAST:event_nome_funcFocusGained
 
-    private void nomeFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_nomeFocusLost
+    private void nome_funcFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_nome_funcFocusLost
         // TODO add your handling code here:
-        if(nome.getText().equals("")){
-            nome.setText("Digite seu nome");
+        if(nome_func.getText().equals("")){
+            nome_func.setText("Digite seu nome");
         }
-    }//GEN-LAST:event_nomeFocusLost
+    }//GEN-LAST:event_nome_funcFocusLost
 
-    private void nomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nomeActionPerformed
+    private void nome_funcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nome_funcActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_nomeActionPerformed
+    }//GEN-LAST:event_nome_funcActionPerformed
 
     private void femActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_femActionPerformed
         // TODO add your handling code here:
@@ -401,35 +401,35 @@ public class funcionarios extends javax.swing.JFrame {
         nb.setSelected(false);
     }//GEN-LAST:event_mascActionPerformed
 
-    private void idadeFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_idadeFocusGained
+    private void cpf_funcFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_cpf_funcFocusGained
         // TODO add your handling code here:
-        if(idade.getText().equals("Digite seu CPF")){
-            idade.setText("");
+        if(cpf_func.getText().equals("Digite seu CPF")){
+            cpf_func.setText("");
         }
-    }//GEN-LAST:event_idadeFocusGained
+    }//GEN-LAST:event_cpf_funcFocusGained
 
-    private void idadeFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_idadeFocusLost
+    private void cpf_funcFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_cpf_funcFocusLost
         // TODO add your handling code here:
-        if(idade.getText().equals("")){
-            idade.setText("Digite seu CPF");
+        if(cpf_func.getText().equals("")){
+            cpf_func.setText("Digite seu CPF");
         }
-    }//GEN-LAST:event_idadeFocusLost
+    }//GEN-LAST:event_cpf_funcFocusLost
 
-    private void idadeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_idadeActionPerformed
+    private void cpf_funcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cpf_funcActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_idadeActionPerformed
+    }//GEN-LAST:event_cpf_funcActionPerformed
 
-    private void receberemailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_receberemailActionPerformed
+    private void uniformeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_uniformeActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_receberemailActionPerformed
+    }//GEN-LAST:event_uniformeActionPerformed
 
-    private void nlnaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nlnaoActionPerformed
+    private void bene_nActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bene_nActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_nlnaoActionPerformed
+    }//GEN-LAST:event_bene_nActionPerformed
 
-    private void nlsimActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nlsimActionPerformed
+    private void bene_sActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bene_sActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_nlsimActionPerformed
+    }//GEN-LAST:event_bene_sActionPerformed
 
     private void nbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nbActionPerformed
         // TODO add your handling code here:
@@ -480,8 +480,10 @@ public class funcionarios extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextArea area;
+    private javax.swing.JRadioButton bene_n;
+    private javax.swing.JRadioButton bene_s;
+    private javax.swing.JTextField cpf_func;
     private javax.swing.JRadioButton fem;
-    private javax.swing.JTextField idade;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -497,12 +499,10 @@ public class funcionarios extends javax.swing.JFrame {
     private javax.swing.JRadioButton masc;
     private javax.swing.JRadioButton nb;
     private javax.swing.JLabel news;
-    private javax.swing.JRadioButton nlnao;
-    private javax.swing.JRadioButton nlsim;
-    private javax.swing.JTextField nome;
-    private javax.swing.JComboBox<String> profissao;
-    private javax.swing.JCheckBox receberemail;
+    private javax.swing.JTextField nome_func;
     private javax.swing.JButton salvar_func;
+    private javax.swing.JComboBox<String> setor;
+    private javax.swing.JCheckBox uniforme;
     private javax.swing.JButton voltar_menu;
     // End of variables declaration//GEN-END:variables
 }
