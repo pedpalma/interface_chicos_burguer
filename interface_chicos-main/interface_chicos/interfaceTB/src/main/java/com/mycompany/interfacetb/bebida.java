@@ -51,6 +51,11 @@ public class bebida extends javax.swing.JFrame {
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setIcon(new javax.swing.ImageIcon("D:\\ADS\\interface_chicos_burguer\\interface_chicos-main\\img\\IconBurguerPNG_200x200-removebg-preview.png")); // NOI18N
+        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel1MouseClicked(evt);
+            }
+        });
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 210, -1));
 
         sabor_bebida.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -138,7 +143,9 @@ public class bebida extends javax.swing.JFrame {
         });
         jPanel2.add(limpar_bebida, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 185, 42));
 
+        nome_bebida.setBackground(new java.awt.Color(255, 255, 255));
         nome_bebida.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        nome_bebida.setForeground(new java.awt.Color(0, 0, 0));
         nome_bebida.setText("Digite o nome do lanche");
         nome_bebida.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
@@ -146,6 +153,11 @@ public class bebida extends javax.swing.JFrame {
             }
             public void focusLost(java.awt.event.FocusEvent evt) {
                 nome_bebidaFocusLost(evt);
+            }
+        });
+        nome_bebida.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nome_bebidaActionPerformed(evt);
             }
         });
         jPanel2.add(nome_bebida, new org.netbeans.lib.awtextra.AbsoluteConstraints(228, 76, 282, -1));
@@ -242,6 +254,16 @@ public class bebida extends javax.swing.JFrame {
         sabor_bebida.setSelectedIndex(0);
         area_bebida.setText("");
     }//GEN-LAST:event_limpar_bebidaActionPerformed
+
+    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
+        // TODO add your handling code here:
+        dispose();
+        new inicio().setVisible(true);
+    }//GEN-LAST:event_jLabel1MouseClicked
+
+    private void nome_bebidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nome_bebidaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_nome_bebidaActionPerformed
 
     /**
      * @param args the command line arguments

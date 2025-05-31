@@ -4,10 +4,8 @@
  */
 package com.mycompany.interfacetb;
 
-/**
- *
- * @author pedro
- */
+import javax.swing.JOptionPane;
+
 public class lanche extends javax.swing.JFrame {
 
     /**
@@ -28,25 +26,25 @@ public class lanche extends javax.swing.JFrame {
 
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jComboBox2 = new javax.swing.JComboBox<>();
+        tipo_carne = new javax.swing.JComboBox<>();
+        tipo_queijo = new javax.swing.JComboBox<>();
         jLabel5 = new javax.swing.JLabel();
-        jComboBox5 = new javax.swing.JComboBox<>();
+        tipo_pao = new javax.swing.JComboBox<>();
         jLabel7 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        jRadioButton1 = new javax.swing.JRadioButton();
+        maionese = new javax.swing.JRadioButton();
         jLabel10 = new javax.swing.JLabel();
-        jRadioButton2 = new javax.swing.JRadioButton();
-        jRadioButton3 = new javax.swing.JRadioButton();
+        ketchup = new javax.swing.JRadioButton();
+        barbecue = new javax.swing.JRadioButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        area_lanche = new javax.swing.JTextArea();
         jLabel11 = new javax.swing.JLabel();
         salvar_lanche = new javax.swing.JButton();
         limpar_lanche = new javax.swing.JButton();
         voltar_menu = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
+        nome_lanche = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -54,34 +52,42 @@ public class lanche extends javax.swing.JFrame {
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setIcon(new javax.swing.ImageIcon("D:\\ADS\\interface_chicos_burguer\\interface_chicos-main\\img\\IconBurguerPNG_200x200-removebg-preview.png")); // NOI18N
+        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel1MouseClicked(evt);
+            }
+        });
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 210, -1));
 
-        jComboBox1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Água", "Coca-cola", "Pepsi Twist", "Chá de pessêgo", "Suco de morango" }));
-        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+        tipo_carne.setBackground(new java.awt.Color(255, 255, 255));
+        tipo_carne.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        tipo_carne.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Costela moída", "Maminha moída", "Cordeiro moído", "Acém moído", " " }));
+        tipo_carne.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox1ActionPerformed(evt);
+                tipo_carneActionPerformed(evt);
             }
         });
-        jPanel2.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(574, 76, 234, 30));
+        jPanel2.add(tipo_carne, new org.netbeans.lib.awtextra.AbsoluteConstraints(574, 76, 234, 30));
 
-        jComboBox2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Croissaint de chocolate", "Bolo de cenoura", "Sorvete de baunilha", "Salada de frutas" }));
-        jComboBox2.addActionListener(new java.awt.event.ActionListener() {
+        tipo_queijo.setBackground(new java.awt.Color(255, 255, 255));
+        tipo_queijo.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        tipo_queijo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Cheddar", "Mussarela", "Gouda", "Parmesão", "Inglês" }));
+        tipo_queijo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox2ActionPerformed(evt);
+                tipo_queijoActionPerformed(evt);
             }
         });
-        jPanel2.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(228, 164, 282, 30));
+        jPanel2.add(tipo_queijo, new org.netbeans.lib.awtextra.AbsoluteConstraints(228, 164, 282, 30));
 
         jLabel5.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Escolha sua carne!");
         jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(582, 42, -1, -1));
 
-        jComboBox5.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Chicos Cebola Cabulosa", "Chicos Batata Bolada", "Chicos Dadinhos Maldosos" }));
-        jPanel2.add(jComboBox5, new org.netbeans.lib.awtextra.AbsoluteConstraints(574, 164, 235, 30));
+        tipo_pao.setBackground(new java.awt.Color(255, 255, 255));
+        tipo_pao.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        tipo_pao.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Australiano", "Francês redondo", "Brioche", "Com Gergelim" }));
+        jPanel2.add(tipo_pao, new org.netbeans.lib.awtextra.AbsoluteConstraints(574, 164, 235, 30));
         jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
@@ -91,7 +97,7 @@ public class lanche extends javax.swing.JFrame {
 
         jLabel8.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel8.setText("Escolha seus Molhos!");
+        jLabel8.setText("Escolha seu Molho!");
         jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 210, -1, -1));
 
         jLabel9.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
@@ -99,32 +105,39 @@ public class lanche extends javax.swing.JFrame {
         jLabel9.setText("Escolha seu pão!");
         jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(589, 136, -1, -1));
 
-        jRadioButton1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jRadioButton1.setForeground(new java.awt.Color(0, 0, 0));
-        jRadioButton1.setText("Maionese");
-        jPanel2.add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(387, 250, -1, -1));
+        maionese.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        maionese.setForeground(new java.awt.Color(0, 0, 0));
+        maionese.setText("Maionese");
+        maionese.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                maioneseActionPerformed(evt);
+            }
+        });
+        jPanel2.add(maionese, new org.netbeans.lib.awtextra.AbsoluteConstraints(387, 250, -1, -1));
 
         jLabel10.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(0, 0, 0));
         jLabel10.setText("Nome do Lanche");
         jPanel2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(277, 46, -1, -1));
 
-        jRadioButton2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jRadioButton2.setForeground(new java.awt.Color(0, 0, 0));
-        jRadioButton2.setText("Ketchup");
-        jPanel2.add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(499, 250, -1, -1));
+        ketchup.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        ketchup.setForeground(new java.awt.Color(0, 0, 0));
+        ketchup.setText("Ketchup");
+        jPanel2.add(ketchup, new org.netbeans.lib.awtextra.AbsoluteConstraints(499, 250, -1, -1));
 
-        jRadioButton3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jRadioButton3.setForeground(new java.awt.Color(0, 0, 0));
-        jRadioButton3.setText("Mostarda");
-        jPanel2.add(jRadioButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(601, 250, -1, -1));
+        barbecue.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        barbecue.setForeground(new java.awt.Color(0, 0, 0));
+        barbecue.setText("Barbecue");
+        jPanel2.add(barbecue, new org.netbeans.lib.awtextra.AbsoluteConstraints(601, 250, -1, -1));
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jTextArea1.setRows(5);
-        jScrollPane1.setViewportView(jTextArea1);
+        area_lanche.setBackground(new java.awt.Color(255, 255, 255));
+        area_lanche.setColumns(20);
+        area_lanche.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        area_lanche.setForeground(new java.awt.Color(0, 0, 0));
+        area_lanche.setRows(5);
+        jScrollPane1.setViewportView(area_lanche);
 
-        jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 340, 463, 135));
+        jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 340, 463, 135));
 
         jLabel11.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(0, 0, 0));
@@ -146,6 +159,11 @@ public class lanche extends javax.swing.JFrame {
         limpar_lanche.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         limpar_lanche.setForeground(new java.awt.Color(0, 0, 0));
         limpar_lanche.setText("Limpar");
+        limpar_lanche.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                limpar_lancheActionPerformed(evt);
+            }
+        });
         jPanel2.add(limpar_lanche, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 370, 185, 42));
 
         voltar_menu.setBackground(new java.awt.Color(154, 88, 51));
@@ -159,9 +177,19 @@ public class lanche extends javax.swing.JFrame {
         });
         jPanel2.add(voltar_menu, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 430, -1, 43));
 
-        jTextField1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jTextField1.setForeground(new java.awt.Color(255, 255, 255));
-        jPanel2.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 80, 280, -1));
+        nome_lanche.setBackground(new java.awt.Color(255, 255, 255));
+        nome_lanche.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        nome_lanche.setForeground(new java.awt.Color(0, 0, 0));
+        nome_lanche.setText("Digite o nome do lanche");
+        nome_lanche.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                nome_lancheFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                nome_lancheFocusLost(evt);
+            }
+        });
+        jPanel2.add(nome_lanche, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 80, 280, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -177,16 +205,33 @@ public class lanche extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+    private void tipo_carneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tipo_carneActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox1ActionPerformed
+    }//GEN-LAST:event_tipo_carneActionPerformed
 
-    private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
+    private void tipo_queijoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tipo_queijoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox2ActionPerformed
+    }//GEN-LAST:event_tipo_queijoActionPerformed
 
     private void salvar_lancheActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salvar_lancheActionPerformed
         // TODO add your handling code here:
+        int valor = JOptionPane.showConfirmDialog(null,"Deseja salvar?","Opções", JOptionPane.YES_NO_CANCEL_OPTION);
+        
+        if(valor==0){
+            lanches l = new lanches();
+            l.setNome_lanche(nome_lanche.getText());
+            l.setTipo_queijo((String)tipo_queijo.getSelectedItem());
+            l.setTipo_carne((String)tipo_carne.getSelectedItem());
+            l.setTipo_pao((String)tipo_pao.getSelectedItem());
+            if(maionese.isSelected()){
+                l.setMolho("Maionese");
+            }else if(ketchup.isSelected()){
+                l.setMolho("Ketchup");
+            }else{
+                l.setMolho("Barbecue");
+            }
+        area_lanche.setText(l.status_lanche());
+        }
     }//GEN-LAST:event_salvar_lancheActionPerformed
 
     private void voltar_menuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_voltar_menuActionPerformed
@@ -194,6 +239,35 @@ public class lanche extends javax.swing.JFrame {
         dispose();
         new carregamento().setVisible(true);
     }//GEN-LAST:event_voltar_menuActionPerformed
+
+    private void maioneseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_maioneseActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_maioneseActionPerformed
+
+    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
+        // TODO add your handling code here:
+        dispose();
+        new inicio().setVisible(true);
+    }//GEN-LAST:event_jLabel1MouseClicked
+
+    private void limpar_lancheActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_limpar_lancheActionPerformed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_limpar_lancheActionPerformed
+
+    private void nome_lancheFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_nome_lancheFocusGained
+        // TODO add your handling code here:
+        if(nome_lanche.getText().equals("Digite o nome do lanche")){
+            nome_lanche.setText("");
+        }
+    }//GEN-LAST:event_nome_lancheFocusGained
+
+    private void nome_lancheFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_nome_lancheFocusLost
+        // TODO add your handling code here:
+        if(nome_lanche.getText().equals("")){
+            nome_lanche.setText("Digite o nome do lanche");
+        }
+    }//GEN-LAST:event_nome_lancheFocusLost
 
     /**
      * @param args the command line arguments
@@ -231,9 +305,8 @@ public class lanche extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
-    private javax.swing.JComboBox<String> jComboBox5;
+    private javax.swing.JTextArea area_lanche;
+    private javax.swing.JRadioButton barbecue;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -243,14 +316,15 @@ public class lanche extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton3;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JRadioButton ketchup;
     private javax.swing.JButton limpar_lanche;
+    private javax.swing.JRadioButton maionese;
+    private javax.swing.JTextField nome_lanche;
     private javax.swing.JButton salvar_lanche;
+    private javax.swing.JComboBox<String> tipo_carne;
+    private javax.swing.JComboBox<String> tipo_pao;
+    private javax.swing.JComboBox<String> tipo_queijo;
     private javax.swing.JButton voltar_menu;
     // End of variables declaration//GEN-END:variables
 }
