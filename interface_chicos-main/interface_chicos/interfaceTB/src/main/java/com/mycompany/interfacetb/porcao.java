@@ -29,22 +29,22 @@ public class porcao extends javax.swing.JFrame {
         tipo = new javax.swing.ButtonGroup();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jComboBox2 = new javax.swing.JComboBox<>();
+        tempero = new javax.swing.JComboBox<>();
+        base_porcao = new javax.swing.JComboBox<>();
         jLabel5 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jRadioButton1 = new javax.swing.JRadioButton();
+        frito = new javax.swing.JRadioButton();
         jLabel10 = new javax.swing.JLabel();
-        jRadioButton2 = new javax.swing.JRadioButton();
-        jRadioButton3 = new javax.swing.JRadioButton();
+        assado = new javax.swing.JRadioButton();
+        cozido = new javax.swing.JRadioButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        area_porcao = new javax.swing.JTextArea();
         jLabel11 = new javax.swing.JLabel();
         salvar_porcao = new javax.swing.JButton();
         limpar_porcao = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
+        nome_porcao = new javax.swing.JTextField();
         voltar_menu = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -60,27 +60,27 @@ public class porcao extends javax.swing.JFrame {
         });
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 210, -1));
 
-        jComboBox1.setBackground(new java.awt.Color(255, 255, 255));
-        jComboBox1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jComboBox1.setForeground(new java.awt.Color(0, 0, 0));
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Água", "Coca-cola", "Pepsi Twist", "Chá de pessêgo", "Suco de morango" }));
-        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+        tempero.setBackground(new java.awt.Color(255, 255, 255));
+        tempero.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        tempero.setForeground(new java.awt.Color(0, 0, 0));
+        tempero.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Água", "Coca-cola", "Pepsi Twist", "Chá de pessêgo", "Suco de morango" }));
+        tempero.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox1ActionPerformed(evt);
+                temperoActionPerformed(evt);
             }
         });
-        jPanel2.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(574, 74, 234, 30));
+        jPanel2.add(tempero, new org.netbeans.lib.awtextra.AbsoluteConstraints(574, 74, 234, 30));
 
-        jComboBox2.setBackground(new java.awt.Color(255, 255, 255));
-        jComboBox2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jComboBox2.setForeground(new java.awt.Color(0, 0, 0));
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Croissaint de chocolate", "Bolo de cenoura", "Sorvete de baunilha", "Salada de frutas" }));
-        jComboBox2.addActionListener(new java.awt.event.ActionListener() {
+        base_porcao.setBackground(new java.awt.Color(255, 255, 255));
+        base_porcao.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        base_porcao.setForeground(new java.awt.Color(0, 0, 0));
+        base_porcao.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Croissaint de chocolate", "Bolo de cenoura", "Sorvete de baunilha", "Salada de frutas" }));
+        base_porcao.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox2ActionPerformed(evt);
+                base_porcaoActionPerformed(evt);
             }
         });
-        jPanel2.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(228, 165, 282, 30));
+        jPanel2.add(base_porcao, new org.netbeans.lib.awtextra.AbsoluteConstraints(228, 165, 282, 30));
 
         jLabel5.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 0, 0));
@@ -98,35 +98,35 @@ public class porcao extends javax.swing.JFrame {
         jLabel8.setText("Tipo:");
         jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(657, 134, -1, -1));
 
-        tipo.add(jRadioButton1);
-        jRadioButton1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jRadioButton1.setForeground(new java.awt.Color(0, 0, 0));
-        jRadioButton1.setText("Frito");
-        jPanel2.add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(565, 174, -1, -1));
+        tipo.add(frito);
+        frito.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        frito.setForeground(new java.awt.Color(0, 0, 0));
+        frito.setText("Frito");
+        jPanel2.add(frito, new org.netbeans.lib.awtextra.AbsoluteConstraints(565, 174, -1, -1));
 
         jLabel10.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(0, 0, 0));
         jLabel10.setText("Nome da Porção!");
         jPanel2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(263, 42, -1, -1));
 
-        tipo.add(jRadioButton2);
-        jRadioButton2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jRadioButton2.setForeground(new java.awt.Color(0, 0, 0));
-        jRadioButton2.setText("Assado");
-        jPanel2.add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(641, 174, -1, -1));
+        tipo.add(assado);
+        assado.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        assado.setForeground(new java.awt.Color(0, 0, 0));
+        assado.setText("Assado");
+        jPanel2.add(assado, new org.netbeans.lib.awtextra.AbsoluteConstraints(641, 174, -1, -1));
 
-        tipo.add(jRadioButton3);
-        jRadioButton3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jRadioButton3.setForeground(new java.awt.Color(0, 0, 0));
-        jRadioButton3.setText("Cozido");
-        jPanel2.add(jRadioButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(735, 174, -1, -1));
+        tipo.add(cozido);
+        cozido.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        cozido.setForeground(new java.awt.Color(0, 0, 0));
+        cozido.setText("Cozido");
+        jPanel2.add(cozido, new org.netbeans.lib.awtextra.AbsoluteConstraints(735, 174, -1, -1));
 
-        jTextArea1.setBackground(new java.awt.Color(255, 255, 255));
-        jTextArea1.setColumns(20);
-        jTextArea1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jTextArea1.setForeground(new java.awt.Color(0, 0, 0));
-        jTextArea1.setRows(5);
-        jScrollPane1.setViewportView(jTextArea1);
+        area_porcao.setBackground(new java.awt.Color(255, 255, 255));
+        area_porcao.setColumns(20);
+        area_porcao.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        area_porcao.setForeground(new java.awt.Color(0, 0, 0));
+        area_porcao.setRows(5);
+        jScrollPane1.setViewportView(area_porcao);
 
         jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 270, 463, 135));
 
@@ -150,12 +150,17 @@ public class porcao extends javax.swing.JFrame {
         limpar_porcao.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         limpar_porcao.setForeground(new java.awt.Color(0, 0, 0));
         limpar_porcao.setText("Limpar");
+        limpar_porcao.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                limpar_porcaoActionPerformed(evt);
+            }
+        });
         jPanel2.add(limpar_porcao, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 185, 42));
 
-        jTextField1.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jTextField1.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel2.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(228, 76, 282, -1));
+        nome_porcao.setBackground(new java.awt.Color(255, 255, 255));
+        nome_porcao.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        nome_porcao.setForeground(new java.awt.Color(0, 0, 0));
+        jPanel2.add(nome_porcao, new org.netbeans.lib.awtextra.AbsoluteConstraints(228, 76, 282, -1));
 
         voltar_menu.setBackground(new java.awt.Color(154, 88, 51));
         voltar_menu.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
@@ -186,13 +191,13 @@ public class porcao extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+    private void temperoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_temperoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox1ActionPerformed
+    }//GEN-LAST:event_temperoActionPerformed
 
-    private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
+    private void base_porcaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_base_porcaoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox2ActionPerformed
+    }//GEN-LAST:event_base_porcaoActionPerformed
 
     private void salvar_porcaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salvar_porcaoActionPerformed
         // TODO add your handling code here:
@@ -209,6 +214,10 @@ public class porcao extends javax.swing.JFrame {
         dispose();
         new inicio().setVisible(true);
     }//GEN-LAST:event_jLabel1MouseClicked
+
+    private void limpar_porcaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_limpar_porcaoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_limpar_porcaoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -246,8 +255,11 @@ public class porcao extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
+    private javax.swing.JTextArea area_porcao;
+    private javax.swing.JRadioButton assado;
+    private javax.swing.JComboBox<String> base_porcao;
+    private javax.swing.JRadioButton cozido;
+    private javax.swing.JRadioButton frito;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -256,14 +268,11 @@ public class porcao extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton3;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JButton limpar_porcao;
+    private javax.swing.JTextField nome_porcao;
     private javax.swing.JButton salvar_porcao;
+    private javax.swing.JComboBox<String> tempero;
     private javax.swing.ButtonGroup tipo;
     private javax.swing.JButton voltar_menu;
     // End of variables declaration//GEN-END:variables
