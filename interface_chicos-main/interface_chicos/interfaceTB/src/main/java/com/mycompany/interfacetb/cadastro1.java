@@ -28,9 +28,9 @@ public class cadastro1 extends javax.swing.JFrame {
         cadastro = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
-        botao = new javax.swing.JButton();
+        salvar_cadasto = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        botaoLimpar = new javax.swing.JButton();
+        limpar_cadasto = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         nome = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
@@ -60,13 +60,13 @@ public class cadastro1 extends javax.swing.JFrame {
         jLabel7.setForeground(new java.awt.Color(0, 0, 0));
         jLabel7.setText("Pessoas Cadastradas");
 
-        botao.setBackground(new java.awt.Color(154, 88, 51));
-        botao.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
-        botao.setForeground(new java.awt.Color(0, 0, 0));
-        botao.setText("Salvar");
-        botao.addActionListener(new java.awt.event.ActionListener() {
+        salvar_cadasto.setBackground(new java.awt.Color(154, 88, 51));
+        salvar_cadasto.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
+        salvar_cadasto.setForeground(new java.awt.Color(0, 0, 0));
+        salvar_cadasto.setText("Salvar");
+        salvar_cadasto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botaoActionPerformed(evt);
+                salvar_cadastoActionPerformed(evt);
             }
         });
 
@@ -74,13 +74,13 @@ public class cadastro1 extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Cadastre-se aqui!");
 
-        botaoLimpar.setBackground(new java.awt.Color(154, 88, 51));
-        botaoLimpar.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
-        botaoLimpar.setForeground(new java.awt.Color(0, 0, 0));
-        botaoLimpar.setText("Limpar");
-        botaoLimpar.addActionListener(new java.awt.event.ActionListener() {
+        limpar_cadasto.setBackground(new java.awt.Color(154, 88, 51));
+        limpar_cadasto.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
+        limpar_cadasto.setForeground(new java.awt.Color(0, 0, 0));
+        limpar_cadasto.setText("Limpar");
+        limpar_cadasto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botaoLimparActionPerformed(evt);
+                limpar_cadastoActionPerformed(evt);
             }
         });
 
@@ -311,9 +311,9 @@ public class cadastro1 extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(voltar_menu)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(botaoLimpar, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(limpar_cadasto, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(botao, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(salvar_cadasto, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(44, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -333,8 +333,8 @@ public class cadastro1 extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(voltar_menu, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(botaoLimpar, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(botao, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(limpar_cadasto, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(salvar_cadasto, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(16, Short.MAX_VALUE))
         );
 
@@ -352,7 +352,7 @@ public class cadastro1 extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void botaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoActionPerformed
+    private void salvar_cadastoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salvar_cadastoActionPerformed
         // TODO add your handling code here:
         int valor = JOptionPane.showConfirmDialog(null, "Deseja Salvar?", "Opções", JOptionPane.YES_NO_CANCEL_OPTION);
         //Yes = 0, No = 1, Cancel = 2;
@@ -380,9 +380,9 @@ public class cadastro1 extends javax.swing.JFrame {
         else if(valor==2){
             System.exit(0);
         }
-    }//GEN-LAST:event_botaoActionPerformed
+    }//GEN-LAST:event_salvar_cadastoActionPerformed
 
-    private void botaoLimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoLimparActionPerformed
+    private void limpar_cadastoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_limpar_cadastoActionPerformed
         // TODO add your handling code here:
         nome.setText("");
         idade.setText("");
@@ -392,7 +392,7 @@ public class cadastro1 extends javax.swing.JFrame {
         receberemail.setSelected(false);
         cadastro.clearSelection();
         profissao.setSelectedIndex(0);
-    }//GEN-LAST:event_botaoLimparActionPerformed
+    }//GEN-LAST:event_limpar_cadastoActionPerformed
 
     private void idadeFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_idadeFocusGained
         // TODO add your handling code here:
@@ -503,8 +503,6 @@ public class cadastro1 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextArea area;
-    private javax.swing.JButton botao;
-    private javax.swing.JButton botaoLimpar;
     private javax.swing.ButtonGroup cadastro;
     private javax.swing.JRadioButton fem;
     private javax.swing.JTextField idade;
@@ -518,6 +516,7 @@ public class cadastro1 extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JButton limpar_cadasto;
     private javax.swing.JRadioButton masc;
     private javax.swing.JRadioButton nb;
     private javax.swing.JLabel news;
@@ -526,6 +525,7 @@ public class cadastro1 extends javax.swing.JFrame {
     private javax.swing.JTextField nome;
     private javax.swing.JComboBox<String> profissao;
     private javax.swing.JCheckBox receberemail;
+    private javax.swing.JButton salvar_cadasto;
     private javax.swing.JButton voltar_menu;
     // End of variables declaration//GEN-END:variables
 }

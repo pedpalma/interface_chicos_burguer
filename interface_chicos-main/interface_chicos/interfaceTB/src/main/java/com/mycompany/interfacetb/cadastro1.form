@@ -64,9 +64,9 @@
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="voltar_menu" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="botaoLimpar" min="-2" pref="144" max="-2" attributes="0"/>
+                          <Component id="limpar_cadasto" min="-2" pref="144" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="botao" min="-2" pref="144" max="-2" attributes="0"/>
+                          <Component id="salvar_cadasto" min="-2" pref="144" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace pref="44" max="32767" attributes="0"/>
@@ -93,8 +93,8 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="voltar_menu" min="-2" pref="43" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="botaoLimpar" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                          <Component id="botao" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                          <Component id="limpar_cadasto" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
+                          <Component id="salvar_cadasto" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace pref="16" max="32767" attributes="0"/>
@@ -117,7 +117,7 @@
             <Property name="text" type="java.lang.String" value="Pessoas Cadastradas"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="botao">
+        <Component class="javax.swing.JButton" name="salvar_cadasto">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="33" green="58" red="9a" type="rgb"/>
@@ -131,7 +131,7 @@
             <Property name="text" type="java.lang.String" value="Salvar"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botaoActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="salvar_cadastoActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel1">
@@ -145,7 +145,7 @@
             <Property name="text" type="java.lang.String" value="Cadastre-se aqui!"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="botaoLimpar">
+        <Component class="javax.swing.JButton" name="limpar_cadasto">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="33" green="58" red="9a" type="rgb"/>
@@ -159,7 +159,7 @@
             <Property name="text" type="java.lang.String" value="Limpar"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botaoLimparActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="limpar_cadastoActionPerformed"/>
           </Events>
         </Component>
         <Container class="javax.swing.JPanel" name="jPanel2">
