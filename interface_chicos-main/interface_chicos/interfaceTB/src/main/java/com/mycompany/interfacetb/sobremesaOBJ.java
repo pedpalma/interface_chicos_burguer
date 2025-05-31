@@ -1,7 +1,7 @@
 package com.mycompany.interfacetb;
 
 public class sobremesaOBJ {
-    private String nome_sobremesa, sabor_sobremsa, tipo_sobremesa, categoria_sobremesa;
+    private String nome_sobremesa, sabor_sobremesa, tipo_sobremesa, categoria_sobremesa;
 
     public String getNome_sobremesa() {
         return nome_sobremesa;
@@ -11,12 +11,12 @@ public class sobremesaOBJ {
         this.nome_sobremesa = nome_sobremesa;
     }
 
-    public String getSabor_sobremsa() {
-        return sabor_sobremsa;
+    public String getSabor_sobremesa() {
+        return sabor_sobremesa;
     }
 
-    public void setSabor_sobremsa(String sabor_sobremsa) {
-        this.sabor_sobremsa = sabor_sobremsa;
+    public void setSabor_sobremesa(String sabor_sobremsa) {
+        this.sabor_sobremesa = sabor_sobremsa;
     }
 
     public String getTipo_sobremesa() {
@@ -39,7 +39,7 @@ public class sobremesaOBJ {
     public String status_sobremesa(){
         return"-----Nova Sobremesa!-----"+
                 "\nNome da Sobremesa: "+this.nome_sobremesa+
-                "\nSabor: "+this.sabor_sobremsa+
+                "\nSabor: "+this.sabor_sobremesa+
                 "\nTipo: "+this.tipo_sobremesa+
                 "\nCategoria: "+this.categoria_sobremesa+
                 "\n";

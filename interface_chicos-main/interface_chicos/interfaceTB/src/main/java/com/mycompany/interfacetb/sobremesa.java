@@ -4,10 +4,8 @@
  */
 package com.mycompany.interfacetb;
 
-/**
- *
- * @author pedro
- */
+import javax.swing.JOptionPane;
+
 public class sobremesa extends javax.swing.JFrame {
 
     /**
@@ -156,6 +154,15 @@ public class sobremesa extends javax.swing.JFrame {
         nome_sobre.setBackground(new java.awt.Color(255, 255, 255));
         nome_sobre.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         nome_sobre.setForeground(new java.awt.Color(0, 0, 0));
+        nome_sobre.setText("Digite o nome da sobremesa");
+        nome_sobre.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                nome_sobreFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                nome_sobreFocusLost(evt);
+            }
+        });
         jPanel2.add(nome_sobre, new org.netbeans.lib.awtextra.AbsoluteConstraints(228, 76, 282, -1));
 
         voltar_menu.setBackground(new java.awt.Color(154, 88, 51));
@@ -195,6 +202,24 @@ public class sobremesa extends javax.swing.JFrame {
 
     private void salvar_sobremesaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salvar_sobremesaActionPerformed
         // TODO add your handling code here:
+        int valor = JOptionPane.showConfirmDialog(null,"Deseja salvar?","Opções", JOptionPane.YES_NO_CANCEL_OPTION);
+        
+        if(valor==0){
+            sobremesaOBJ s = new sobremesaOBJ();
+            s.setNome_sobremesa(nome_sobre.getText());
+            s.setSabor_sobremesa((String)sabor_sobre.getSelectedItem());
+            s.setTipo_sobremesa((String)tipo_sobre.getSelectedItem());
+            if(congelado.isSelected()){
+                s.setTipo_sobremesa("Congelado");
+            }else if(frio.isSelected()){
+                s.setTipo_sobremesa("Frio");
+            }else{
+                s.setTipo_sobremesa("Quente");
+            }
+        area_sobre.setText(s.status_sobremesa());
+        }else if(valor==2){
+            System.exit(0);
+        }
     }//GEN-LAST:event_salvar_sobremesaActionPerformed
 
     private void voltar_menuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_voltar_menuActionPerformed
@@ -219,6 +244,21 @@ public class sobremesa extends javax.swing.JFrame {
         congelado.setSelected(false);
         area_sobre.setText("");
     }//GEN-LAST:event_limpar_sobremesaActionPerformed
+
+    private void nome_sobreFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_nome_sobreFocusGained
+        // TODO add your handling code here:
+        if(nome_sobre.getText().equals("Digite o nome da sobremesa")){
+            nome_sobre.setText("");
+        }
+        
+    }//GEN-LAST:event_nome_sobreFocusGained
+
+    private void nome_sobreFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_nome_sobreFocusLost
+        // TODO add your handling code here:
+        if(nome_sobre.getText().equals("")){
+            nome_sobre.setText("Digite o nome da sobremesa");
+        }
+    }//GEN-LAST:event_nome_sobreFocusLost
 
     /**
      * @param args the command line arguments
