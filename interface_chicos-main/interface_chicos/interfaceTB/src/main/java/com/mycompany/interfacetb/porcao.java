@@ -117,12 +117,12 @@ public class porcao extends javax.swing.JFrame {
         jTextArea1.setRows(5);
         jScrollPane1.setViewportView(jTextArea1);
 
-        jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 248, 463, 135));
+        jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 270, 463, 135));
 
         jLabel11.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(0, 0, 0));
         jLabel11.setText("Nova Porção");
-        jPanel2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 202, -1, 40));
+        jPanel2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 220, -1, 40));
 
         salvar_porcao.setBackground(new java.awt.Color(154, 88, 51));
         salvar_porcao.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
@@ -133,13 +133,13 @@ public class porcao extends javax.swing.JFrame {
                 salvar_porcaoActionPerformed(evt);
             }
         });
-        jPanel2.add(salvar_porcao, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 219, 185, 43));
+        jPanel2.add(salvar_porcao, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, 185, 43));
 
         limpar_porcao.setBackground(new java.awt.Color(154, 88, 51));
         limpar_porcao.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         limpar_porcao.setForeground(new java.awt.Color(0, 0, 0));
         limpar_porcao.setText("Limpar");
-        jPanel2.add(limpar_porcao, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 280, 185, 42));
+        jPanel2.add(limpar_porcao, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 185, 42));
 
         jTextField1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jPanel2.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(228, 76, 282, -1));
@@ -153,7 +153,7 @@ public class porcao extends javax.swing.JFrame {
                 voltar_menuActionPerformed(evt);
             }
         });
-        jPanel2.add(voltar_menu, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 340, -1, 43));
+        jPanel2.add(voltar_menu, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 360, -1, 43));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

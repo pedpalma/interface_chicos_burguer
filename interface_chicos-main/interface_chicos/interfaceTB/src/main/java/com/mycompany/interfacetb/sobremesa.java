@@ -113,12 +113,12 @@ public class sobremesa extends javax.swing.JFrame {
         jTextArea1.setRows(5);
         jScrollPane1.setViewportView(jTextArea1);
 
-        jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 248, 463, 135));
+        jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 260, 463, 135));
 
         jLabel11.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(0, 0, 0));
         jLabel11.setText("Nova Sobremesa!");
-        jPanel2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 202, -1, 40));
+        jPanel2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 220, -1, 40));
 
         salvar_sobremesa.setBackground(new java.awt.Color(154, 88, 51));
         salvar_sobremesa.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
@@ -129,13 +129,13 @@ public class sobremesa extends javax.swing.JFrame {
                 salvar_sobremesaActionPerformed(evt);
             }
         });
-        jPanel2.add(salvar_sobremesa, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 219, 185, 43));
+        jPanel2.add(salvar_sobremesa, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, 185, 43));
 
         limpar_sobremesa.setBackground(new java.awt.Color(154, 88, 51));
         limpar_sobremesa.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         limpar_sobremesa.setForeground(new java.awt.Color(0, 0, 0));
         limpar_sobremesa.setText("Limpar");
-        jPanel2.add(limpar_sobremesa, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 280, 185, 42));
+        jPanel2.add(limpar_sobremesa, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, 185, 42));
 
         jTextField1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jPanel2.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(228, 76, 282, -1));
@@ -149,7 +149,7 @@ public class sobremesa extends javax.swing.JFrame {
                 voltar_menuActionPerformed(evt);
             }
         });
-        jPanel2.add(voltar_menu, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 340, -1, 43));
+        jPanel2.add(voltar_menu, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 350, -1, 43));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
