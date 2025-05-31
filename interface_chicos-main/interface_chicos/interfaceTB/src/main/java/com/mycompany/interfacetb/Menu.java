@@ -38,8 +38,8 @@ public class Menu extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(161, 146, 134));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("U:\\LIP\\Interface\\Interface\\img\\IconBurguer.png")); // NOI18N
-        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 10, 310, 260));
+        jLabel1.setIcon(new javax.swing.ImageIcon("D:\\ADS\\interface_chicos_burguer\\interface_chicos-main\\img\\IconBurguerPNG_200x200-removebg-preview.png")); // NOI18N
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 40, 200, 210));
 
         jButton1.setBackground(new java.awt.Color(154, 88, 51));
         jButton1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
