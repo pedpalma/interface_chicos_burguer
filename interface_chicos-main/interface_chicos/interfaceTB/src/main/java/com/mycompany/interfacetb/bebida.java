@@ -4,10 +4,8 @@
  */
 package com.mycompany.interfacetb;
 
-/**
- *
- * @author pedro
- */
+import javax.swing.JOptionPane;
+
 public class bebida extends javax.swing.JFrame {
 
     /**
@@ -29,22 +27,23 @@ public class bebida extends javax.swing.JFrame {
         tipo_bebida = new javax.swing.ButtonGroup();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jComboBox2 = new javax.swing.JComboBox<>();
+        sabor_bebida = new javax.swing.JComboBox<>();
+        base_bebida = new javax.swing.JComboBox<>();
         jLabel5 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jRadioButton1 = new javax.swing.JRadioButton();
+        tipo_na = new javax.swing.JRadioButton();
         jLabel10 = new javax.swing.JLabel();
-        jRadioButton2 = new javax.swing.JRadioButton();
+        tipo_s = new javax.swing.JRadioButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        area_bebida = new javax.swing.JTextArea();
         jLabel11 = new javax.swing.JLabel();
         salvar_bebida = new javax.swing.JButton();
         limpar_bebida = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
+        nome_bebida = new javax.swing.JTextField();
         voltar_menu = new javax.swing.JButton();
+        tipo_a = new javax.swing.JRadioButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -54,23 +53,23 @@ public class bebida extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon("D:\\ADS\\interface_chicos_burguer\\interface_chicos-main\\img\\IconBurguerPNG_200x200-removebg-preview.png")); // NOI18N
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 210, -1));
 
-        jComboBox1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Água", "Coca-cola", "Pepsi Twist", "Chá de pessêgo", "Suco de morango" }));
-        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+        sabor_bebida.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        sabor_bebida.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Morango", "Limão", "Maracujá", "Cola", "Guaraná", "Laranja", "Uva" }));
+        sabor_bebida.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox1ActionPerformed(evt);
+                sabor_bebidaActionPerformed(evt);
             }
         });
-        jPanel2.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 74, 234, 30));
+        jPanel2.add(sabor_bebida, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 74, 234, 30));
 
-        jComboBox2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Croissaint de chocolate", "Bolo de cenoura", "Sorvete de baunilha", "Salada de frutas" }));
-        jComboBox2.addActionListener(new java.awt.event.ActionListener() {
+        base_bebida.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        base_bebida.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Leite", "Leite Condensado", "Creme de Leite", "Água", "Vodka", "Tequila", "Cachcaça" }));
+        base_bebida.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox2ActionPerformed(evt);
+                base_bebidaActionPerformed(evt);
             }
         });
-        jPanel2.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(228, 165, 282, 30));
+        jPanel2.add(base_bebida, new org.netbeans.lib.awtextra.AbsoluteConstraints(228, 165, 282, 30));
 
         jLabel5.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 0, 0));
@@ -88,27 +87,27 @@ public class bebida extends javax.swing.JFrame {
         jLabel8.setText("Tipo:");
         jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 134, -1, -1));
 
-        tipo_bebida.add(jRadioButton1);
-        jRadioButton1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jRadioButton1.setForeground(new java.awt.Color(0, 0, 0));
-        jRadioButton1.setText("Não alcólico");
-        jPanel2.add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(639, 174, -1, -1));
+        tipo_bebida.add(tipo_na);
+        tipo_na.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        tipo_na.setForeground(new java.awt.Color(0, 0, 0));
+        tipo_na.setText("Não alcólico");
+        jPanel2.add(tipo_na, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 170, -1, -1));
 
         jLabel10.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(0, 0, 0));
         jLabel10.setText("Nome da Bebida!");
         jPanel2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(263, 42, -1, -1));
 
-        tipo_bebida.add(jRadioButton2);
-        jRadioButton2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jRadioButton2.setForeground(new java.awt.Color(0, 0, 0));
-        jRadioButton2.setText("Alcólico");
-        jPanel2.add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(767, 174, -1, -1));
+        tipo_bebida.add(tipo_s);
+        tipo_s.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        tipo_s.setForeground(new java.awt.Color(0, 0, 0));
+        tipo_s.setText("Soda");
+        jPanel2.add(tipo_s, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 170, -1, -1));
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jTextArea1.setRows(5);
-        jScrollPane1.setViewportView(jTextArea1);
+        area_bebida.setColumns(20);
+        area_bebida.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        area_bebida.setRows(5);
+        jScrollPane1.setViewportView(area_bebida);
 
         jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 270, 463, 135));
 
@@ -134,8 +133,17 @@ public class bebida extends javax.swing.JFrame {
         limpar_bebida.setText("Limpar");
         jPanel2.add(limpar_bebida, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 185, 42));
 
-        jTextField1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jPanel2.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(228, 76, 282, -1));
+        nome_bebida.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        nome_bebida.setText("Digite o nome do lanche");
+        nome_bebida.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                nome_bebidaFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                nome_bebidaFocusLost(evt);
+            }
+        });
+        jPanel2.add(nome_bebida, new org.netbeans.lib.awtextra.AbsoluteConstraints(228, 76, 282, -1));
 
         voltar_menu.setBackground(new java.awt.Color(154, 88, 51));
         voltar_menu.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
@@ -148,11 +156,17 @@ public class bebida extends javax.swing.JFrame {
         });
         jPanel2.add(voltar_menu, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 360, -1, 43));
 
+        tipo_bebida.add(tipo_a);
+        tipo_a.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        tipo_a.setForeground(new java.awt.Color(0, 0, 0));
+        tipo_a.setText("Alcólico");
+        jPanel2.add(tipo_a, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 170, -1, -1));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 908, Short.MAX_VALUE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 929, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -162,16 +176,34 @@ public class bebida extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+    private void sabor_bebidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sabor_bebidaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox1ActionPerformed
+    }//GEN-LAST:event_sabor_bebidaActionPerformed
 
-    private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
+    private void base_bebidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_base_bebidaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox2ActionPerformed
+    }//GEN-LAST:event_base_bebidaActionPerformed
 
     private void salvar_bebidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salvar_bebidaActionPerformed
         // TODO add your handling code here:
+        int valor = JOptionPane.showConfirmDialog(null,"Deseja salvar?","Opções", JOptionPane.YES_NO_CANCEL_OPTION);
+        
+        if(valor==0){
+            bebidaOBJ beb = new bebidaOBJ();
+            beb.setNome_bebida(nome_bebida.getText());
+            beb.setBase_bebida((String)base_bebida.getSelectedItem());
+            beb.setSabor_bebida((String)sabor_bebida.getSelectedItem());
+            if(tipo_na.isSelected()){
+                beb.setTipo_bebida("Não Alcólica");
+            }else if(tipo_a.isSelected()){
+                beb.setTipo_bebida("Bebida Alcólica");
+            }else{
+                beb.setTipo_bebida("Soda");
+            }
+            area_bebida.setText(beb.status_bebida());
+        }else if(valor==2){
+            System.exit(0);
+        }
     }//GEN-LAST:event_salvar_bebidaActionPerformed
 
     private void voltar_menuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_voltar_menuActionPerformed
@@ -179,6 +211,21 @@ public class bebida extends javax.swing.JFrame {
         dispose();
         new carregamento().setVisible(true);
     }//GEN-LAST:event_voltar_menuActionPerformed
+
+    private void nome_bebidaFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_nome_bebidaFocusGained
+        // TODO add your handling code here:
+        if(nome_bebida.getText().equals("Digite o nome do lanche")){
+            nome_bebida.setText("");
+        }
+        
+    }//GEN-LAST:event_nome_bebidaFocusGained
+
+    private void nome_bebidaFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_nome_bebidaFocusLost
+        // TODO add your handling code here:
+        if(nome_bebida.getText().equals("")){
+            nome_bebida.setText("Digite o nome do lanche");
+        }
+    }//GEN-LAST:event_nome_bebidaFocusLost
 
     /**
      * @param args the command line arguments
@@ -216,8 +263,8 @@ public class bebida extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
+    private javax.swing.JTextArea area_bebida;
+    private javax.swing.JComboBox<String> base_bebida;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -226,14 +273,15 @@ public class bebida extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JButton limpar_bebida;
+    private javax.swing.JTextField nome_bebida;
+    private javax.swing.JComboBox<String> sabor_bebida;
     private javax.swing.JButton salvar_bebida;
+    private javax.swing.JRadioButton tipo_a;
     private javax.swing.ButtonGroup tipo_bebida;
+    private javax.swing.JRadioButton tipo_na;
+    private javax.swing.JRadioButton tipo_s;
     private javax.swing.JButton voltar_menu;
     // End of variables declaration//GEN-END:variables
 }
