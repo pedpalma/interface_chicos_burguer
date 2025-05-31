@@ -61,6 +61,7 @@ public class lanche extends javax.swing.JFrame {
 
         tipo_carne.setBackground(new java.awt.Color(255, 255, 255));
         tipo_carne.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        tipo_carne.setForeground(new java.awt.Color(0, 0, 0));
         tipo_carne.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Costela moída", "Maminha moída", "Cordeiro moído", "Acém moído", " " }));
         tipo_carne.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -71,6 +72,7 @@ public class lanche extends javax.swing.JFrame {
 
         tipo_queijo.setBackground(new java.awt.Color(255, 255, 255));
         tipo_queijo.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        tipo_queijo.setForeground(new java.awt.Color(0, 0, 0));
         tipo_queijo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Cheddar", "Mussarela", "Gouda", "Parmesão", "Inglês" }));
         tipo_queijo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -86,6 +88,7 @@ public class lanche extends javax.swing.JFrame {
 
         tipo_pao.setBackground(new java.awt.Color(255, 255, 255));
         tipo_pao.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        tipo_pao.setForeground(new java.awt.Color(0, 0, 0));
         tipo_pao.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Australiano", "Francês redondo", "Brioche", "Com Gergelim" }));
         jPanel2.add(tipo_pao, new org.netbeans.lib.awtextra.AbsoluteConstraints(574, 164, 235, 30));
         jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));

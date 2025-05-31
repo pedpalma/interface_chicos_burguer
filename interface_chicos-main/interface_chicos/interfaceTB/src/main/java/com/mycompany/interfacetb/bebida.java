@@ -58,7 +58,9 @@ public class bebida extends javax.swing.JFrame {
         });
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 210, -1));
 
+        sabor_bebida.setBackground(new java.awt.Color(255, 255, 255));
         sabor_bebida.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        sabor_bebida.setForeground(new java.awt.Color(0, 0, 0));
         sabor_bebida.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Morango", "Limão", "Maracujá", "Cola", "Guaraná", "Laranja", "Uva" }));
         sabor_bebida.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -67,7 +69,9 @@ public class bebida extends javax.swing.JFrame {
         });
         jPanel2.add(sabor_bebida, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 74, 234, 30));
 
+        base_bebida.setBackground(new java.awt.Color(255, 255, 255));
         base_bebida.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        base_bebida.setForeground(new java.awt.Color(0, 0, 0));
         base_bebida.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Leite", "Leite Condensado", "Creme de Leite", "Água", "Vodka", "Tequila", "Cachcaça" }));
         base_bebida.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -109,8 +113,10 @@ public class bebida extends javax.swing.JFrame {
         tipo_s.setText("Soda");
         jPanel2.add(tipo_s, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 170, -1, -1));
 
+        area_bebida.setBackground(new java.awt.Color(255, 255, 255));
         area_bebida.setColumns(20);
         area_bebida.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        area_bebida.setForeground(new java.awt.Color(0, 0, 0));
         area_bebida.setRows(5);
         jScrollPane1.setViewportView(area_bebida);
 

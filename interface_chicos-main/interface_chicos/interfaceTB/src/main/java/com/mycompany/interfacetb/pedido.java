@@ -28,21 +28,21 @@ public class pedido extends javax.swing.JFrame {
 
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jComboBox2 = new javax.swing.JComboBox<>();
-        jComboBox3 = new javax.swing.JComboBox<>();
+        bebida = new javax.swing.JComboBox<>();
+        sobremesa = new javax.swing.JComboBox<>();
+        lanche = new javax.swing.JComboBox<>();
         jLabel5 = new javax.swing.JLabel();
-        jComboBox5 = new javax.swing.JComboBox<>();
+        porcao = new javax.swing.JComboBox<>();
         jLabel7 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        jRadioButton1 = new javax.swing.JRadioButton();
+        alho_mostarda = new javax.swing.JRadioButton();
         jLabel10 = new javax.swing.JLabel();
-        jRadioButton2 = new javax.swing.JRadioButton();
-        jRadioButton3 = new javax.swing.JRadioButton();
+        barbecue = new javax.swing.JRadioButton();
+        maionese_verde = new javax.swing.JRadioButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        area_lanches = new javax.swing.JTextArea();
         jLabel11 = new javax.swing.JLabel();
         salvar_pedido = new javax.swing.JButton();
         limpar_pedido = new javax.swing.JButton();
@@ -54,31 +54,39 @@ public class pedido extends javax.swing.JFrame {
 
         jLabel1.setIcon(new javax.swing.ImageIcon("D:\\ADS\\interface_chicos_burguer\\interface_chicos-main\\img\\IconBurguerPNG_200x200-removebg-preview.png")); // NOI18N
 
-        jComboBox1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Água", "Coca-cola", "Pepsi Twist", "Chá de pessêgo", "Suco de morango" }));
-        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+        bebida.setBackground(new java.awt.Color(255, 255, 255));
+        bebida.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        bebida.setForeground(new java.awt.Color(0, 0, 0));
+        bebida.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Água", "Coca-cola", "Pepsi Twist", "Chá de pessêgo", "Suco de morango" }));
+        bebida.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox1ActionPerformed(evt);
+                bebidaActionPerformed(evt);
             }
         });
 
-        jComboBox2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Croissaint de chocolate", "Bolo de cenoura", "Sorvete de baunilha", "Salada de frutas" }));
-        jComboBox2.addActionListener(new java.awt.event.ActionListener() {
+        sobremesa.setBackground(new java.awt.Color(255, 255, 255));
+        sobremesa.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        sobremesa.setForeground(new java.awt.Color(0, 0, 0));
+        sobremesa.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Croissaint de chocolate", "Bolo de cenoura", "Sorvete de baunilha", "Salada de frutas" }));
+        sobremesa.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox2ActionPerformed(evt);
+                sobremesaActionPerformed(evt);
             }
         });
 
-        jComboBox3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Clássico Chico Smash Burger", "Chicos Bacon Churrasco", "Chicos Salada Master", "Chicos Australiano", "Chicos Frango Brabo", "Chicos Master Fish" }));
+        lanche.setBackground(new java.awt.Color(255, 255, 255));
+        lanche.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        lanche.setForeground(new java.awt.Color(0, 0, 0));
+        lanche.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Clássico Chico Smash Burger", "Chicos Bacon Churrasco", "Chicos Salada Master", "Chicos Australiano", "Chicos Frango Brabo", "Chicos Master Fish" }));
 
         jLabel5.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Escolha sua Bebida!");
 
-        jComboBox5.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Chicos Cebola Cabulosa", "Chicos Batata Bolada", "Chicos Dadinhos Maldosos" }));
+        porcao.setBackground(new java.awt.Color(255, 255, 255));
+        porcao.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        porcao.setForeground(new java.awt.Color(0, 0, 0));
+        porcao.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Chicos Cebola Cabulosa", "Chicos Batata Bolada", "Chicos Dadinhos Maldosos" }));
 
         jLabel6.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(0, 0, 0));
@@ -92,26 +100,28 @@ public class pedido extends javax.swing.JFrame {
         jLabel9.setForeground(new java.awt.Color(0, 0, 0));
         jLabel9.setText("Escolha sua Porção!");
 
-        jRadioButton1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jRadioButton1.setForeground(new java.awt.Color(0, 0, 0));
-        jRadioButton1.setText("Alho e Mostarda");
+        alho_mostarda.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        alho_mostarda.setForeground(new java.awt.Color(0, 0, 0));
+        alho_mostarda.setText("Alho e Mostarda");
 
         jLabel10.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(0, 0, 0));
         jLabel10.setText("Escolha seu Lanche!");
 
-        jRadioButton2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jRadioButton2.setForeground(new java.awt.Color(0, 0, 0));
-        jRadioButton2.setText("Barbecue");
+        barbecue.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        barbecue.setForeground(new java.awt.Color(0, 0, 0));
+        barbecue.setText("Barbecue");
 
-        jRadioButton3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jRadioButton3.setForeground(new java.awt.Color(0, 0, 0));
-        jRadioButton3.setText("Maionese Verde");
+        maionese_verde.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        maionese_verde.setForeground(new java.awt.Color(0, 0, 0));
+        maionese_verde.setText("Maionese Verde");
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jTextArea1.setRows(5);
-        jScrollPane1.setViewportView(jTextArea1);
+        area_lanches.setBackground(new java.awt.Color(255, 255, 255));
+        area_lanches.setColumns(20);
+        area_lanches.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        area_lanches.setForeground(new java.awt.Color(0, 0, 0));
+        area_lanches.setRows(5);
+        jScrollPane1.setViewportView(area_lanches);
 
         jLabel11.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(0, 0, 0));
@@ -131,6 +141,11 @@ public class pedido extends javax.swing.JFrame {
         limpar_pedido.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         limpar_pedido.setForeground(new java.awt.Color(0, 0, 0));
         limpar_pedido.setText("Limpar");
+        limpar_pedido.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                limpar_pedidoActionPerformed(evt);
+            }
+        });
 
         voltar_menu.setBackground(new java.awt.Color(154, 88, 51));
         voltar_menu.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
@@ -157,15 +172,15 @@ public class pedido extends javax.swing.JFrame {
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addGap(17, 17, 17)
                                 .addComponent(jLabel10))
-                            .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, 282, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lanche, javax.swing.GroupLayout.PREFERRED_SIZE, 282, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel6)
-                            .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 282, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(sobremesa, javax.swing.GroupLayout.PREFERRED_SIZE, 282, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(64, 64, 64)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel5)
-                            .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(bebida, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel9)
-                            .addComponent(jComboBox5, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(porcao, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(228, 228, 228)
                         .addComponent(jLabel8))
@@ -179,12 +194,12 @@ public class pedido extends javax.swing.JFrame {
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jRadioButton1)
+                                    .addComponent(alho_mostarda)
                                     .addComponent(jLabel11))
                                 .addGap(16, 16, 16)
-                                .addComponent(jRadioButton2)
+                                .addComponent(barbecue)
                                 .addGap(16, 16, 16)
-                                .addComponent(jRadioButton3))
+                                .addComponent(maionese_verde))
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 463, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(72, Short.MAX_VALUE))
         );
@@ -200,19 +215,19 @@ public class pedido extends javax.swing.JFrame {
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addComponent(jLabel10)
                                 .addGap(8, 8, 8)
-                                .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(lanche, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(30, 30, 30)
                                 .addComponent(jLabel6)
                                 .addGap(0, 0, 0)
-                                .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(sobremesa, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addComponent(jLabel5)
                                 .addGap(8, 8, 8)
-                                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(bebida, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(30, 30, 30)
                                 .addComponent(jLabel9)
                                 .addGap(0, 0, 0)
-                                .addComponent(jComboBox5, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addComponent(porcao, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addGap(12, 12, 12)
                 .addComponent(jLabel8)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -223,11 +238,11 @@ public class pedido extends javax.swing.JFrame {
                         .addGap(10, 10, 10)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jRadioButton1)
+                                .addComponent(alho_mostarda)
                                 .addGap(5, 5, 5)
                                 .addComponent(jLabel11))
-                            .addComponent(jRadioButton2)
-                            .addComponent(jRadioButton3))
+                            .addComponent(barbecue)
+                            .addComponent(maionese_verde))
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addGap(14, 14, 14)
@@ -256,13 +271,13 @@ public class pedido extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
+    private void sobremesaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sobremesaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox2ActionPerformed
+    }//GEN-LAST:event_sobremesaActionPerformed
 
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+    private void bebidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bebidaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox1ActionPerformed
+    }//GEN-LAST:event_bebidaActionPerformed
 
     private void voltar_menuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_voltar_menuActionPerformed
         // TODO add your handling code here:
@@ -273,6 +288,18 @@ public class pedido extends javax.swing.JFrame {
     private void salvar_pedidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salvar_pedidoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_salvar_pedidoActionPerformed
+
+    private void limpar_pedidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_limpar_pedidoActionPerformed
+        // TODO add your handling code here:
+        lanche.setSelectedIndex(0);
+        bebida.setSelectedIndex(0);
+        porcao.setSelectedIndex(0);
+        sobremesa.setSelectedIndex(0);
+        maionese_verde.setSelected(false);
+        barbecue.setSelected(false);
+        alho_mostarda.setSelected(false);
+        area_lanches.setText("");
+    }//GEN-LAST:event_limpar_pedidoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -310,10 +337,10 @@ public class pedido extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
-    private javax.swing.JComboBox<String> jComboBox3;
-    private javax.swing.JComboBox<String> jComboBox5;
+    private javax.swing.JRadioButton alho_mostarda;
+    private javax.swing.JTextArea area_lanches;
+    private javax.swing.JRadioButton barbecue;
+    private javax.swing.JComboBox<String> bebida;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -323,13 +350,13 @@ public class pedido extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton3;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JComboBox<String> lanche;
     private javax.swing.JButton limpar_pedido;
+    private javax.swing.JRadioButton maionese_verde;
+    private javax.swing.JComboBox<String> porcao;
     private javax.swing.JButton salvar_pedido;
+    private javax.swing.JComboBox<String> sobremesa;
     private javax.swing.JButton voltar_menu;
     // End of variables declaration//GEN-END:variables
 }
