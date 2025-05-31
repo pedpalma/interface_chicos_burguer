@@ -152,7 +152,7 @@ public class bebida extends javax.swing.JFrame {
         nome_bebida.setBackground(new java.awt.Color(255, 255, 255));
         nome_bebida.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         nome_bebida.setForeground(new java.awt.Color(0, 0, 0));
-        nome_bebida.setText("Digite o nome do lanche");
+        nome_bebida.setText("Digite o nome da bebida");
         nome_bebida.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 nome_bebidaFocusGained(evt);
@@ -237,7 +237,7 @@ public class bebida extends javax.swing.JFrame {
 
     private void nome_bebidaFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_nome_bebidaFocusGained
         // TODO add your handling code here:
-        if(nome_bebida.getText().equals("Digite o nome do lanche")){
+        if(nome_bebida.getText().equals("Digite o nome da bebida")){
             nome_bebida.setText("");
         }
         
@@ -246,7 +246,7 @@ public class bebida extends javax.swing.JFrame {
     private void nome_bebidaFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_nome_bebidaFocusLost
         // TODO add your handling code here:
         if(nome_bebida.getText().equals("")){
-            nome_bebida.setText("Digite o nome do lanche");
+            nome_bebida.setText("Digite o nome da bebida");
         }
     }//GEN-LAST:event_nome_bebidaFocusLost
 

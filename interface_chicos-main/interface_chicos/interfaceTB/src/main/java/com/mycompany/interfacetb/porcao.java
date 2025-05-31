@@ -4,6 +4,8 @@
  */
 package com.mycompany.interfacetb;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author pedro
@@ -160,6 +162,15 @@ public class porcao extends javax.swing.JFrame {
         nome_porcao.setBackground(new java.awt.Color(255, 255, 255));
         nome_porcao.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         nome_porcao.setForeground(new java.awt.Color(0, 0, 0));
+        nome_porcao.setText("Digite o nome da porção");
+        nome_porcao.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                nome_porcaoFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                nome_porcaoFocusLost(evt);
+            }
+        });
         jPanel2.add(nome_porcao, new org.netbeans.lib.awtextra.AbsoluteConstraints(228, 76, 282, -1));
 
         voltar_menu.setBackground(new java.awt.Color(154, 88, 51));
@@ -201,6 +212,26 @@ public class porcao extends javax.swing.JFrame {
 
     private void salvar_porcaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salvar_porcaoActionPerformed
         // TODO add your handling code here:
+        int valor = JOptionPane.showConfirmDialog(null, "Deseja Salvar?", "Opções", JOptionPane.YES_NO_CANCEL_OPTION);
+        
+        if(valor == 0){
+            porcaoOBJ p = new porcaoOBJ();
+            p.setNome_porcao(nome_porcao.getText());
+            p.setBase((String)base_porcao.getSelectedItem());
+            p.setTempero((String)tempero.getSelectedItem());
+            if(frito.isSelected()){
+                p.setTipo("Frito");
+            }else if(assado.isSelected()){
+                p.setTipo("Assado");
+            }else{
+                p.setTipo("Cozido");
+            }
+        area_porcao.setText(p.status_porcao());
+        }else if(valor==2){
+            System.exit(0);
+        }
+
+        
     }//GEN-LAST:event_salvar_porcaoActionPerformed
 
     private void voltar_menuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_voltar_menuActionPerformed
@@ -217,7 +248,28 @@ public class porcao extends javax.swing.JFrame {
 
     private void limpar_porcaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_limpar_porcaoActionPerformed
         // TODO add your handling code here:
+        nome_porcao.setText("");
+        tempero.setSelectedIndex(0);
+        base_porcao.setSelectedIndex(0);
+        frito.setSelected(false);
+        assado.setSelected(false);
+        cozido.setSelected(false);
+        area_porcao.setText("");
     }//GEN-LAST:event_limpar_porcaoActionPerformed
+
+    private void nome_porcaoFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_nome_porcaoFocusGained
+        // TODO add your handling code here:
+        if(nome_porcao.getText().equals("Digite o nome da porção")){
+            nome_porcao.setText("");
+        }
+    }//GEN-LAST:event_nome_porcaoFocusGained
+
+    private void nome_porcaoFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_nome_porcaoFocusLost
+        // TODO add your handling code here:
+        if(nome_porcao.getText().equals("")){
+            nome_porcao.setText("Digite o nome da porção");
+        }
+    }//GEN-LAST:event_nome_porcaoFocusLost
 
     /**
      * @param args the command line arguments
