@@ -4,10 +4,8 @@
  */
 package com.mycompany.interfacetb;
 
-/**
- *
- * @author pedro
- */
+import javax.swing.JOptionPane;
+
 public class funcionarios extends javax.swing.JFrame {
 
     /**
@@ -49,7 +47,7 @@ public class funcionarios extends javax.swing.JFrame {
         nb = new javax.swing.JRadioButton();
         jLabel8 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
-        area = new javax.swing.JTextArea();
+        area_func = new javax.swing.JTextArea();
         voltar_menu = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -158,7 +156,7 @@ public class funcionarios extends javax.swing.JFrame {
         jLabel5.setText("Setor:");
 
         cargo.setBackground(new java.awt.Color(255, 255, 255));
-        cargo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Garoto de Programa", "TikToker", "Cozinheiro", "Bodybuilder", "NOC", "Motorista", "Mecânico" }));
+        cargo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "T.I.", "Financeiro", "Cozinha", "Entrega", "Logistica", "Direção" }));
 
         jLabel6.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(0, 0, 0));
@@ -232,9 +230,9 @@ public class funcionarios extends javax.swing.JFrame {
                             .addComponent(jLabel5))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(nome_func, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(nome_func, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 214, Short.MAX_VALUE)
                             .addComponent(cpf_func, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(cargo, 0, 214, Short.MAX_VALUE)))
+                            .addComponent(cargo, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jLabel3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -280,9 +278,10 @@ public class funcionarios extends javax.swing.JFrame {
 
         jLabel8.setIcon(new javax.swing.ImageIcon("D:\\ADS\\interface_chicos_burguer\\interface_chicos-main\\img\\IconBurguerPNG_200x200-removebg-preview.png")); // NOI18N
 
-        area.setColumns(20);
-        area.setRows(5);
-        jScrollPane2.setViewportView(area);
+        area_func.setColumns(20);
+        area_func.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        area_func.setRows(5);
+        jScrollPane2.setViewportView(area_func);
 
         voltar_menu.setBackground(new java.awt.Color(154, 88, 51));
         voltar_menu.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
@@ -363,6 +362,30 @@ public class funcionarios extends javax.swing.JFrame {
 
     private void salvar_funcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salvar_funcActionPerformed
         // TODO add your handling code here:
+        int valor = JOptionPane.showConfirmDialog(null,"Deseja salvar?","Opções",JOptionPane.YES_NO_CANCEL_OPTION);
+        
+        if(valor==0){
+            funcionariosOBJ func = new funcionariosOBJ();
+            func.setNome_func(nome_func.getText());
+            func.setCpf(cpf_func.getText());
+            func.setCargo((String)cargo.getSelectedItem());
+            func.setUniforme(uniforme.isSelected()?"Sim":"Não");
+            if(bene_s.isSelected()){
+                func.setVt("Sim");
+            }else{
+                func.setVt("Não");
+            }
+            if(masc.isSelected()){
+                func.setSexo_func("Masculino");
+            }else if(fem.isSelected()){
+                func.setSexo_func("Feminino");
+            }else{
+                func.setSexo_func("Não-binário");
+            }
+            area_func.setText(func.status_func());
+        }else if(valor==2){
+            System.exit(0);
+        }
     }//GEN-LAST:event_salvar_funcActionPerformed
 
     private void limpar_funcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_limpar_funcActionPerformed
@@ -486,7 +509,7 @@ public class funcionarios extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextArea area;
+    private javax.swing.JTextArea area_func;
     private javax.swing.JRadioButton bene_n;
     private javax.swing.JRadioButton bene_s;
     private javax.swing.JComboBox<String> cargo;
