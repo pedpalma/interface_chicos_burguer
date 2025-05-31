@@ -40,7 +40,7 @@ public class funcionarios extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         cpf_func = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
-        setor = new javax.swing.JComboBox<>();
+        cargo = new javax.swing.JComboBox<>();
         jLabel6 = new javax.swing.JLabel();
         uniforme = new javax.swing.JCheckBox();
         news = new javax.swing.JLabel();
@@ -157,8 +157,8 @@ public class funcionarios extends javax.swing.JFrame {
         jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Setor:");
 
-        setor.setBackground(new java.awt.Color(255, 255, 255));
-        setor.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Garoto de Programa", "TikToker", "Cozinheiro", "Bodybuilder", "NOC", "Motorista", "Mecânico" }));
+        cargo.setBackground(new java.awt.Color(255, 255, 255));
+        cargo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Garoto de Programa", "TikToker", "Cozinheiro", "Bodybuilder", "NOC", "Motorista", "Mecânico" }));
 
         jLabel6.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(0, 0, 0));
@@ -234,7 +234,7 @@ public class funcionarios extends javax.swing.JFrame {
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(nome_func, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(cpf_func, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(setor, 0, 214, Short.MAX_VALUE)))
+                            .addComponent(cargo, 0, 214, Short.MAX_VALUE)))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jLabel3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -265,7 +265,7 @@ public class funcionarios extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(setor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(cargo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
@@ -316,7 +316,7 @@ public class funcionarios extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel7))
-                .addGap(12, 12, 12))
+                .addContainerGap(42, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -351,9 +351,7 @@ public class funcionarios extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -369,6 +367,15 @@ public class funcionarios extends javax.swing.JFrame {
 
     private void limpar_funcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_limpar_funcActionPerformed
         // TODO add your handling code here:
+        nome_func.setText("");
+        masc.setSelected(false);
+        fem.setSelected(false);
+        nb.setSelected(false);
+        cpf_func.setText("");
+        cargo.setSelectedIndex(0);
+        uniforme.setSelected(false);
+        bene_s.setSelected(false);
+        bene_n.setSelected(false);
     }//GEN-LAST:event_limpar_funcActionPerformed
 
     private void nome_funcFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_nome_funcFocusGained
@@ -482,6 +489,7 @@ public class funcionarios extends javax.swing.JFrame {
     private javax.swing.JTextArea area;
     private javax.swing.JRadioButton bene_n;
     private javax.swing.JRadioButton bene_s;
+    private javax.swing.JComboBox<String> cargo;
     private javax.swing.JTextField cpf_func;
     private javax.swing.JRadioButton fem;
     private javax.swing.JLabel jLabel1;
@@ -501,7 +509,6 @@ public class funcionarios extends javax.swing.JFrame {
     private javax.swing.JLabel news;
     private javax.swing.JTextField nome_func;
     private javax.swing.JButton salvar_func;
-    private javax.swing.JComboBox<String> setor;
     private javax.swing.JCheckBox uniforme;
     private javax.swing.JButton voltar_menu;
     // End of variables declaration//GEN-END:variables
