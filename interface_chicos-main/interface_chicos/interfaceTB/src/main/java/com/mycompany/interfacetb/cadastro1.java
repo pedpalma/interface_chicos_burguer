@@ -46,10 +46,10 @@ public class cadastro1 extends javax.swing.JFrame {
         news = new javax.swing.JLabel();
         nlnao = new javax.swing.JRadioButton();
         nlsim = new javax.swing.JRadioButton();
+        nb = new javax.swing.JRadioButton();
         jLabel8 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         area = new javax.swing.JTextArea();
-        nb = new javax.swing.JRadioButton();
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -88,7 +88,7 @@ public class cadastro1 extends javax.swing.JFrame {
                 botaoLimparActionPerformed(evt);
             }
         });
-        jPanel1.add(botaoLimpar, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 370, 100, 42));
+        jPanel1.add(botaoLimpar, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 370, 100, 42));
 
         jPanel2.setBackground(new java.awt.Color(154, 88, 51));
 
@@ -204,6 +204,15 @@ public class cadastro1 extends javax.swing.JFrame {
             }
         });
 
+        nb.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        nb.setForeground(new java.awt.Color(0, 0, 0));
+        nb.setText("Não-Binário");
+        nb.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nbActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -224,20 +233,24 @@ public class cadastro1 extends javax.swing.JFrame {
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel2)
-                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addComponent(jLabel4)
-                                .addComponent(jLabel3))
+                                .addGap(11, 11, 11))
                             .addComponent(jLabel5))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(nome, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                                .addComponent(masc)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(fem))
                             .addComponent(idade, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(profissao, 0, 214, Short.MAX_VALUE))))
-                .addContainerGap(83, Short.MAX_VALUE))
+                            .addComponent(profissao, 0, 214, Short.MAX_VALUE)))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(masc)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(fem)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(nb)))
+                .addContainerGap(49, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -250,7 +263,8 @@ public class cadastro1 extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(fem)
                     .addComponent(masc)
-                    .addComponent(jLabel3))
+                    .addComponent(jLabel3)
+                    .addComponent(nb, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
@@ -271,7 +285,7 @@ public class cadastro1 extends javax.swing.JFrame {
                 .addContainerGap(45, Short.MAX_VALUE))
         );
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 120, 420, 290));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 110, 420, 290));
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 0, 186, 149));
 
         area.setColumns(20);
@@ -279,16 +293,6 @@ public class cadastro1 extends javax.swing.JFrame {
         jScrollPane2.setViewportView(area);
 
         jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 70, 294, 251));
-
-        nb.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        nb.setForeground(new java.awt.Color(0, 0, 0));
-        nb.setText("Não-Binário");
-        nb.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                nbActionPerformed(evt);
-            }
-        });
-        jPanel1.add(nb, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 200, -1, -1));
 
         jButton1.setBackground(new java.awt.Color(154, 88, 51));
         jButton1.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
