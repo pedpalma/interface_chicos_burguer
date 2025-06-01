@@ -279,7 +279,10 @@ public class cadastro1 extends javax.swing.JFrame {
                 .addContainerGap(45, Short.MAX_VALUE))
         );
 
+        area.setBackground(new java.awt.Color(255, 255, 255));
         area.setColumns(20);
+        area.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        area.setForeground(new java.awt.Color(0, 0, 0));
         area.setRows(5);
         jScrollPane2.setViewportView(area);
 

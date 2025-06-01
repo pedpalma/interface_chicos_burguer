@@ -24,6 +24,7 @@ public class sobremesa extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        cat = new javax.swing.ButtonGroup();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         sabor_sobre = new javax.swing.JComboBox<>();
@@ -95,6 +96,7 @@ public class sobremesa extends javax.swing.JFrame {
         jLabel8.setText("Categoria");
         jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(649, 134, -1, -1));
 
+        cat.add(congelado);
         congelado.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         congelado.setForeground(new java.awt.Color(0, 0, 0));
         congelado.setText("Congelado");
@@ -105,11 +107,13 @@ public class sobremesa extends javax.swing.JFrame {
         jLabel10.setText("Nome da Sobremesa!");
         jPanel2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 40, -1, -1));
 
+        cat.add(frio);
         frio.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         frio.setForeground(new java.awt.Color(0, 0, 0));
         frio.setText("Frio");
         jPanel2.add(frio, new org.netbeans.lib.awtextra.AbsoluteConstraints(684, 174, -1, -1));
 
+        cat.add(quente);
         quente.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         quente.setForeground(new java.awt.Color(0, 0, 0));
         quente.setText("Quente");
@@ -297,6 +301,7 @@ public class sobremesa extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextArea area_sobre;
+    private javax.swing.ButtonGroup cat;
     private javax.swing.JRadioButton congelado;
     private javax.swing.JRadioButton frio;
     private javax.swing.JLabel jLabel1;

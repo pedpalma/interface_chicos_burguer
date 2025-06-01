@@ -278,8 +278,10 @@ public class funcionarios extends javax.swing.JFrame {
 
         jLabel8.setIcon(new javax.swing.ImageIcon("D:\\ADS\\interface_chicos_burguer\\interface_chicos-main\\img\\IconBurguerPNG_200x200-removebg-preview.png")); // NOI18N
 
+        area_func.setBackground(new java.awt.Color(255, 255, 255));
         area_func.setColumns(20);
         area_func.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        area_func.setForeground(new java.awt.Color(0, 0, 0));
         area_func.setRows(5);
         jScrollPane2.setViewportView(area_func);
 

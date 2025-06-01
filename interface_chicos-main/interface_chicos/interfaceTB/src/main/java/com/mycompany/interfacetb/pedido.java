@@ -24,6 +24,7 @@ public class pedido extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        molhos = new javax.swing.ButtonGroup();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         bebida = new javax.swing.JComboBox<>();
@@ -98,6 +99,7 @@ public class pedido extends javax.swing.JFrame {
         jLabel9.setForeground(new java.awt.Color(0, 0, 0));
         jLabel9.setText("Escolha sua Porção!");
 
+        molhos.add(alho_mostarda);
         alho_mostarda.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         alho_mostarda.setForeground(new java.awt.Color(0, 0, 0));
         alho_mostarda.setText("Alho e Mostarda");
@@ -106,10 +108,12 @@ public class pedido extends javax.swing.JFrame {
         jLabel10.setForeground(new java.awt.Color(0, 0, 0));
         jLabel10.setText("Escolha seu Lanche!");
 
+        molhos.add(barbecue);
         barbecue.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         barbecue.setForeground(new java.awt.Color(0, 0, 0));
         barbecue.setText("Barbecue");
 
+        molhos.add(maionese_verde);
         maionese_verde.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         maionese_verde.setForeground(new java.awt.Color(0, 0, 0));
         maionese_verde.setText("Maionese Verde");
@@ -371,6 +375,7 @@ public class pedido extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> lanche;
     private javax.swing.JButton limpar_pedido;
     private javax.swing.JRadioButton maionese_verde;
+    private javax.swing.ButtonGroup molhos;
     private javax.swing.JComboBox<String> porcao;
     private javax.swing.JButton salvar_pedido;
     private javax.swing.JComboBox<String> sobremesa;

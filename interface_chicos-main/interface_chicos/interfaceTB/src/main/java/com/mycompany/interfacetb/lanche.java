@@ -24,6 +24,7 @@ public class lanche extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        molho = new javax.swing.ButtonGroup();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         tipo_carne = new javax.swing.JComboBox<>();
@@ -108,6 +109,7 @@ public class lanche extends javax.swing.JFrame {
         jLabel9.setText("Escolha seu pão!");
         jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(589, 136, -1, -1));
 
+        molho.add(maionese);
         maionese.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         maionese.setForeground(new java.awt.Color(0, 0, 0));
         maionese.setText("Maionese");
@@ -123,11 +125,13 @@ public class lanche extends javax.swing.JFrame {
         jLabel10.setText("Nome do Lanche");
         jPanel2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(277, 46, -1, -1));
 
+        molho.add(ketchup);
         ketchup.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         ketchup.setForeground(new java.awt.Color(0, 0, 0));
         ketchup.setText("Ketchup");
         jPanel2.add(ketchup, new org.netbeans.lib.awtextra.AbsoluteConstraints(499, 250, -1, -1));
 
+        molho.add(barbecue);
         barbecue.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         barbecue.setForeground(new java.awt.Color(0, 0, 0));
         barbecue.setText("Barbecue");
@@ -333,6 +337,7 @@ public class lanche extends javax.swing.JFrame {
     private javax.swing.JRadioButton ketchup;
     private javax.swing.JButton limpar_lanche;
     private javax.swing.JRadioButton maionese;
+    private javax.swing.ButtonGroup molho;
     private javax.swing.JTextField nome_lanche;
     private javax.swing.JButton salvar_lanche;
     private javax.swing.JComboBox<String> tipo_carne;
